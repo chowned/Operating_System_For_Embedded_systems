@@ -1,0 +1,56 @@
+build/com/tpl_com_queue.c.o: \
+ /home/gaetano/Documenti/trampoline//com/tpl_com_queue.c \
+ /home/gaetano/Documenti/trampoline//os/tpl_os_definitions.h \
+ /home/gaetano/Documenti/trampoline//os/tpl_os_application_def.h \
+ lab01_ex02/tpl_app_define.h \
+ /home/gaetano/Documenti/trampoline//os/tpl_config_def.h \
+ /home/gaetano/Documenti/trampoline//os/tpl_config_check.h \
+ /home/gaetano/Documenti/trampoline//com/tpl_com_definitions.h \
+ /home/gaetano/Documenti/trampoline//com/tpl_com_private_types.h \
+ /home/gaetano/Documenti/trampoline//com/tpl_com_types.h \
+ /home/gaetano/Documenti/trampoline//machines/avr/tpl_os_std_types.h \
+ /home/gaetano/Documenti/trampoline//com/tpl_com_queue.h \
+ /home/gaetano/Documenti/trampoline//com/tpl_com_base_mo.h \
+ /home/gaetano/Documenti/trampoline//os/tpl_os_types.h \
+ /home/gaetano/Documenti/trampoline//os/tpl_os_internal_types.h \
+ /home/gaetano/Documenti/trampoline//os/tpl_os_custom_types.h \
+ lab01_ex02/tpl_app_custom_types.h \
+ /home/gaetano/Documenti/trampoline//os/tpl_compiler.h \
+ /home/gaetano/Documenti/trampoline//machines/avr/tpl_machine.h \
+ /home/gaetano/Documenti/trampoline//os/tpl_os_custom_types.h \
+ /home/gaetano/Documenti/trampoline//os/tpl_compiler.h \
+ /home/gaetano/Documenti/trampoline//os/tpl_os_action.h \
+ /home/gaetano/Documenti/trampoline//os/tpl_os_task_kernel.h \
+ /home/gaetano/Documenti/trampoline//os/tpl_os_kernel.h \
+ /home/gaetano/Documenti/trampoline//os/tpl_os_multicore_macros.h \
+ /home/gaetano/Documenti/trampoline//os/tpl_memmap.h \
+ /home/gaetano/Documenti/trampoline//com/tpl_com_filtering.h \
+ /home/gaetano/Documenti/trampoline//os/tpl_os_internal_types.h \
+ /home/gaetano/Documenti/trampoline//os/tpl_memmap.h
+/home/gaetano/Documenti/trampoline//os/tpl_os_definitions.h:
+/home/gaetano/Documenti/trampoline//os/tpl_os_application_def.h:
+lab01_ex02/tpl_app_define.h:
+/home/gaetano/Documenti/trampoline//os/tpl_config_def.h:
+/home/gaetano/Documenti/trampoline//os/tpl_config_check.h:
+/home/gaetano/Documenti/trampoline//com/tpl_com_definitions.h:
+/home/gaetano/Documenti/trampoline//com/tpl_com_private_types.h:
+/home/gaetano/Documenti/trampoline//com/tpl_com_types.h:
+/home/gaetano/Documenti/trampoline//machines/avr/tpl_os_std_types.h:
+/home/gaetano/Documenti/trampoline//com/tpl_com_queue.h:
+/home/gaetano/Documenti/trampoline//com/tpl_com_base_mo.h:
+/home/gaetano/Documenti/trampoline//os/tpl_os_types.h:
+/home/gaetano/Documenti/trampoline//os/tpl_os_internal_types.h:
+/home/gaetano/Documenti/trampoline//os/tpl_os_custom_types.h:
+lab01_ex02/tpl_app_custom_types.h:
+/home/gaetano/Documenti/trampoline//os/tpl_compiler.h:
+/home/gaetano/Documenti/trampoline//machines/avr/tpl_machine.h:
+/home/gaetano/Documenti/trampoline//os/tpl_os_custom_types.h:
+/home/gaetano/Documenti/trampoline//os/tpl_compiler.h:
+/home/gaetano/Documenti/trampoline//os/tpl_os_action.h:
+/home/gaetano/Documenti/trampoline//os/tpl_os_task_kernel.h:
+/home/gaetano/Documenti/trampoline//os/tpl_os_kernel.h:
+/home/gaetano/Documenti/trampoline//os/tpl_os_multicore_macros.h:
+/home/gaetano/Documenti/trampoline//os/tpl_memmap.h:
+/home/gaetano/Documenti/trampoline//com/tpl_com_filtering.h:
+/home/gaetano/Documenti/trampoline//os/tpl_os_internal_types.h:
+/home/gaetano/Documenti/trampoline//os/tpl_memmap.h:

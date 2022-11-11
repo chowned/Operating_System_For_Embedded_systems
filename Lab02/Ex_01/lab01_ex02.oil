@@ -1,0 +1,78 @@
+OIL_VERSION = "2.5" : "only_one_periodic_task" ;
+
+IMPLEMENTATION trampoline {
+/* This fix the default STACKSIZE of tasks */
+TASK {
+    UINT32 STACKSIZE = 16384 ;
+} ;
+/* This fix the default STACKSIZE of ISRs */
+ISR {
+    UINT32 STACKSIZE = 16384 ;
+} ;
+};
+
+CPU only_one_periodic_task {    
+  OS config {
+    STATUS = STANDARD;
+    BUILD = TRUE {
+        APP_SRC = "lab01_ex02.cpp";
+        TRAMPOLINE_BASE_PATH = "/home/gaetano/Documenti/trampoline/";
+        APP_NAME = "ex2_exe";
+
+        CPPCOMPILER = "avr-g++";
+        COMPILER = "avr-gcc";
+        LINKER = "avr-gcc";
+        ASSEMBLER = "avr-gcc";
+        COPIER = "avr-objcopy";
+        SYSTEM = PYTHON;
+    };
+    SYSTEM_CALL = TRUE;
+
+    
+  };
+
+    APPMODE stdAppmode {};
+
+    MESSAGE msgDataSend {
+        MESSAGEPROPERTY = SEND_STATIC_INTERNAL { 
+            CDATATYPE = "uint16";
+        };
+    };
+    MESSAGE msgDataReceiveUnqueued {
+        MESSAGEPROPERTY     =   RECEIVE_UNQUEUED_INTERNAL{
+            SENDINGMESSAGE   =   msgDataSend;
+            FILTER          =   ALWAYS;
+            INITIALVALUE    =   0x00;
+        };
+        NOTIFICATION = ACTIVATETASK{
+            TASK = TaskPWM;
+        };
+    };
+
+    ALARM a500msec {
+        COUNTER = SystemCounter;
+        ACTION = ACTIVATETASK { TASK = TaskADC; };
+        AUTOSTART = TRUE { APPMODE = stdAppmode; ALARMTIME = 293; CYCLETIME = 293; };
+    };
+    ALARM a750msec {
+        COUNTER = SystemCounter;
+        ACTION = ACTIVATETASK { TASK = TaskPWM; };
+        AUTOSTART = TRUE { APPMODE = stdAppmode; ALARMTIME = 2; CYCLETIME = 2; };
+    };
+    TASK TaskADC {
+        PRIORITY = 2;
+        AUTOSTART = TRUE { APPMODE = stdAppmode; };
+        ACTIVATION = 1;
+        SCHEDULE = FULL;
+        STACKSIZE = 256;
+    };
+    TASK TaskPWM {
+        PRIORITY = 1;
+        AUTOSTART = FALSE;
+        ACTIVATION = 1;
+        SCHEDULE = FULL;
+        STACKSIZE = 256;
+    };
+    
+};
+

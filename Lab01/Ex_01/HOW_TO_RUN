@@ -1,0 +1,3 @@
+../../goil/makefile-unix/goil --target=posix/linux --templates=../../goil/templates lab01_ex01.oil
+./build.py
+./ex1_exe
