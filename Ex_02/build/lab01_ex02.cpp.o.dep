@@ -1,0 +1,105 @@
+build/lab01_ex02.cpp.o: lab01_ex02.cpp lab01_ex02/tpl_os.h \
+ /home/gaetano/Documenti/trampoline//os/tpl_os_definitions.h \
+ /home/gaetano/Documenti/trampoline//os/tpl_os_application_def.h \
+ lab01_ex02/tpl_app_define.h \
+ /home/gaetano/Documenti/trampoline//os/tpl_config_def.h \
+ /home/gaetano/Documenti/trampoline//os/tpl_config_check.h \
+ /home/gaetano/Documenti/trampoline//os/tpl_os_application_def.h \
+ /home/gaetano/Documenti/trampoline//os/tpl_os_error.h \
+ /home/gaetano/Documenti/trampoline//os/tpl_os_types.h \
+ /home/gaetano/Documenti/trampoline//os/tpl_os_internal_types.h \
+ /home/gaetano/Documenti/trampoline//machines/avr/tpl_os_std_types.h \
+ /home/gaetano/Documenti/trampoline//os/tpl_os_custom_types.h \
+ lab01_ex02/tpl_app_custom_types.h \
+ /home/gaetano/Documenti/trampoline//os/tpl_compiler.h \
+ /home/gaetano/Documenti/trampoline//machines/avr/tpl_machine.h \
+ /home/gaetano/Documenti/trampoline//os/tpl_os_custom_types.h \
+ /home/gaetano/Documenti/trampoline//os/tpl_compiler.h \
+ /home/gaetano/Documenti/trampoline//os/tpl_memmap.h \
+ /home/gaetano/Documenti/trampoline//os/tpl_os_os.h \
+ /home/gaetano/Documenti/trampoline//os/tpl_os_interrupt.h \
+ /home/gaetano/Documenti/trampoline//os/tpl_os_task.h \
+ /home/gaetano/Documenti/trampoline//os/tpl_os_resource.h \
+ /home/gaetano/Documenti/trampoline//os/tpl_os_alarm.h \
+ /home/gaetano/Documenti/trampoline//machines/avr/arduino/cores/arduino/Arduino.h \
+ /usr/avr/include/stdlib.h /usr/lib/gcc/avr/12.2.0/include/stddef.h \
+ /usr/lib/gcc/avr/12.2.0/include/stdbool.h /usr/avr/include/string.h \
+ /usr/avr/include/math.h /usr/avr/include/avr/pgmspace.h \
+ /usr/avr/include/inttypes.h /usr/lib/gcc/avr/12.2.0/include/stdint.h \
+ /usr/avr/include/stdint.h /usr/avr/include/avr/io.h \
+ /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/iom328p.h \
+ /usr/avr/include/avr/portpins.h /usr/avr/include/avr/common.h \
+ /usr/avr/include/avr/version.h /usr/avr/include/avr/fuse.h \
+ /usr/avr/include/avr/lock.h /usr/avr/include/avr/interrupt.h \
+ /home/gaetano/Documenti/trampoline//machines/avr/arduino/cores/arduino/binary.h \
+ /home/gaetano/Documenti/trampoline//machines/avr/arduino/cores/arduino/WCharacter.h \
+ /usr/avr/include/ctype.h \
+ /home/gaetano/Documenti/trampoline//machines/avr/arduino/cores/arduino/WString.h \
+ /home/gaetano/Documenti/trampoline//machines/avr/arduino/cores/arduino/HardwareSerial.h \
+ /home/gaetano/Documenti/trampoline//machines/avr/arduino/cores/arduino/Stream.h \
+ /home/gaetano/Documenti/trampoline//machines/avr/arduino/cores/arduino/Print.h \
+ /usr/avr/include/stdio.h /usr/lib/gcc/avr/12.2.0/include/stdarg.h \
+ /home/gaetano/Documenti/trampoline//machines/avr/arduino/cores/arduino/Printable.h \
+ /home/gaetano/Documenti/trampoline//machines/avr/arduino/cores/arduino/USBAPI.h \
+ /usr/avr/include/avr/eeprom.h /usr/avr/include/util/delay.h \
+ /usr/avr/include/util/delay_basic.h \
+ /home/gaetano/Documenti/trampoline//machines/avr/arduino/cores/arduino/Arduino.h \
+ /home/gaetano/Documenti/trampoline//machines/avr/arduino/variants/standard/pins_arduino.h
+lab01_ex02/tpl_os.h:
+/home/gaetano/Documenti/trampoline//os/tpl_os_definitions.h:
+/home/gaetano/Documenti/trampoline//os/tpl_os_application_def.h:
+lab01_ex02/tpl_app_define.h:
+/home/gaetano/Documenti/trampoline//os/tpl_config_def.h:
+/home/gaetano/Documenti/trampoline//os/tpl_config_check.h:
+/home/gaetano/Documenti/trampoline//os/tpl_os_application_def.h:
+/home/gaetano/Documenti/trampoline//os/tpl_os_error.h:
+/home/gaetano/Documenti/trampoline//os/tpl_os_types.h:
+/home/gaetano/Documenti/trampoline//os/tpl_os_internal_types.h:
+/home/gaetano/Documenti/trampoline//machines/avr/tpl_os_std_types.h:
+/home/gaetano/Documenti/trampoline//os/tpl_os_custom_types.h:
+lab01_ex02/tpl_app_custom_types.h:
+/home/gaetano/Documenti/trampoline//os/tpl_compiler.h:
+/home/gaetano/Documenti/trampoline//machines/avr/tpl_machine.h:
+/home/gaetano/Documenti/trampoline//os/tpl_os_custom_types.h:
+/home/gaetano/Documenti/trampoline//os/tpl_compiler.h:
+/home/gaetano/Documenti/trampoline//os/tpl_memmap.h:
+/home/gaetano/Documenti/trampoline//os/tpl_os_os.h:
+/home/gaetano/Documenti/trampoline//os/tpl_os_interrupt.h:
+/home/gaetano/Documenti/trampoline//os/tpl_os_task.h:
+/home/gaetano/Documenti/trampoline//os/tpl_os_resource.h:
+/home/gaetano/Documenti/trampoline//os/tpl_os_alarm.h:
+/home/gaetano/Documenti/trampoline//machines/avr/arduino/cores/arduino/Arduino.h:
+/usr/avr/include/stdlib.h:
+/usr/lib/gcc/avr/12.2.0/include/stddef.h:
+/usr/lib/gcc/avr/12.2.0/include/stdbool.h:
+/usr/avr/include/string.h:
+/usr/avr/include/math.h:
+/usr/avr/include/avr/pgmspace.h:
+/usr/avr/include/inttypes.h:
+/usr/lib/gcc/avr/12.2.0/include/stdint.h:
+/usr/avr/include/stdint.h:
+/usr/avr/include/avr/io.h:
+/usr/avr/include/avr/sfr_defs.h:
+/usr/avr/include/avr/iom328p.h:
+/usr/avr/include/avr/portpins.h:
+/usr/avr/include/avr/common.h:
+/usr/avr/include/avr/version.h:
+/usr/avr/include/avr/fuse.h:
+/usr/avr/include/avr/lock.h:
+/usr/avr/include/avr/interrupt.h:
+/home/gaetano/Documenti/trampoline//machines/avr/arduino/cores/arduino/binary.h:
+/home/gaetano/Documenti/trampoline//machines/avr/arduino/cores/arduino/WCharacter.h:
+/usr/avr/include/ctype.h:
+/home/gaetano/Documenti/trampoline//machines/avr/arduino/cores/arduino/WString.h:
+/home/gaetano/Documenti/trampoline//machines/avr/arduino/cores/arduino/HardwareSerial.h:
+/home/gaetano/Documenti/trampoline//machines/avr/arduino/cores/arduino/Stream.h:
+/home/gaetano/Documenti/trampoline//machines/avr/arduino/cores/arduino/Print.h:
+/usr/avr/include/stdio.h:
+/usr/lib/gcc/avr/12.2.0/include/stdarg.h:
+/home/gaetano/Documenti/trampoline//machines/avr/arduino/cores/arduino/Printable.h:
+/home/gaetano/Documenti/trampoline//machines/avr/arduino/cores/arduino/USBAPI.h:
+/usr/avr/include/avr/eeprom.h:
+/usr/avr/include/util/delay.h:
+/usr/avr/include/util/delay_basic.h:
+/home/gaetano/Documenti/trampoline//machines/avr/arduino/cores/arduino/Arduino.h:
+/home/gaetano/Documenti/trampoline//machines/avr/arduino/variants/standard/pins_arduino.h:
