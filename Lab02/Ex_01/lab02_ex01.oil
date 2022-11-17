@@ -15,9 +15,9 @@ CPU only_one_periodic_task {
   OS config {
     STATUS = STANDARD;
     BUILD = TRUE {
-        APP_SRC = "lab01_ex02.cpp";
+        APP_SRC = "lab02_ex01.cpp";
         TRAMPOLINE_BASE_PATH = "/home/gaetano/Documenti/trampoline/";
-        APP_NAME = "ex2_exe";
+        APP_NAME = "lab_2_ex_1_exe";
 
         CPPCOMPILER = "avr-g++";
         COMPILER = "avr-gcc";
@@ -35,7 +35,7 @@ CPU only_one_periodic_task {
 
     MESSAGE msgDataSend {
         MESSAGEPROPERTY = SEND_STATIC_INTERNAL { 
-            CDATATYPE = "uint16";
+            CDATATYPE = "uint8";
         };
     };
     MESSAGE msgDataReceiveUnqueued {
