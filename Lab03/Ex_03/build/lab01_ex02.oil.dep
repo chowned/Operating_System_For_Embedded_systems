@@ -1,0 +1,10 @@
+lab01_ex02.oil: \
+ /home/gaetano/Documenti/trampoline/goil/templates/config/config.oil \
+ /home/gaetano/Documenti/trampoline/goil/templates/config/kernel.oil \
+ /home/gaetano/Documenti/trampoline/goil/templates/config/api.oil \
+ /home/gaetano/Documenti/trampoline/goil/templates/config/api_STM.oil \
+ /home/gaetano/Documenti/trampoline/goil/templates/config/api_ioc.oil \
+ /home/gaetano/Documenti/trampoline/goil/templates/config/avr/config.oil \
+ /home/gaetano/Documenti/trampoline/goil/templates/config/avr/arduino/config.oil \
+ /home/gaetano/Documenti/trampoline/goil/templates/config/avr/arduino/uno/config.oil \
+ /home/gaetano/Documenti/trampoline/goil/templates/config/config2.5.oil

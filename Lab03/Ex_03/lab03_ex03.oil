@@ -12,9 +12,9 @@ CPU three_tasks {
   OS config {
     STATUS = STANDARD;
     BUILD = TRUE {
-        APP_SRC = "lab03_ex01.cpp";
+        APP_SRC = "lab03_ex03.cpp";
         TRAMPOLINE_BASE_PATH = "/home/$USER/Documenti/trampoline/";
-        APP_NAME = "ex2_exe";
+        APP_NAME = "ex3_exe";
 
         CPPCOMPILER = "avr-g++";
         COMPILER = "avr-gcc";
@@ -26,6 +26,8 @@ CPU three_tasks {
     SYSTEM_CALL = TRUE;
   };
     APPMODE stdAppmode {};
+    //SCHEDULING POLICY: NON-PREEMPTIVE;
+    SCHEDULING POLICY: NON-PREEMPTIVE;
     ALARM a1000msec {
         COUNTER = SystemCounter;
         ACTION = ACTIVATETASK { TASK = TaskA; };
@@ -45,21 +47,21 @@ CPU three_tasks {
         PRIORITY = 3; /* w=2 */
         AUTOSTART = TRUE { APPMODE = stdAppmode; };
         ACTIVATION = 1;
-        SCHEDULE = FULL;
+        SCHEDULE = NON;
         STACKSIZE = 256;
     };
     TASK TaskB {
         PRIORITY = 2; /* w=7 */
         AUTOSTART = TRUE { APPMODE = stdAppmode; };
         ACTIVATION = 1;
-        SCHEDULE = FULL;
+        SCHEDULE = NON;
         STACKSIZE = 256;
     };
-    TASK TaskV {
+    TASK TaskC {
         PRIORITY = 1; /* w=3 */
         AUTOSTART = TRUE { APPMODE = stdAppmode; };
         ACTIVATION = 1;
-        SCHEDULE = FULL;
+        SCHEDULE = NON;
         STACKSIZE = 256;
     };
 };

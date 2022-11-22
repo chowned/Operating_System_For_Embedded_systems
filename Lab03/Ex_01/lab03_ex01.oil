@@ -1,0 +1,65 @@
+OIL_VERSION = "2.5" : "three_tasks" ;
+IMPLEMENTATION trampoline {
+TASK {
+    UINT32 STACKSIZE = 16384 ;
+    };
+ISR {
+    UINT32 STACKSIZE = 16384 ;
+    };
+};
+
+CPU three_tasks {    
+  OS config {
+    STATUS = STANDARD;
+    BUILD = TRUE {
+        APP_SRC = "lab03_ex01.cpp";
+        TRAMPOLINE_BASE_PATH = "/home/$USER/Documenti/trampoline/";
+        APP_NAME = "ex1_exe";
+
+        CPPCOMPILER = "avr-g++";
+        COMPILER = "avr-gcc";
+        LINKER = "avr-gcc";
+        ASSEMBLER = "avr-gcc";
+        COPIER = "avr-objcopy";
+        SYSTEM = PYTHON;
+    };
+    SYSTEM_CALL = TRUE;
+  };
+    APPMODE stdAppmode {};
+    ALARM a1000msec {
+        COUNTER = SystemCounter;
+        ACTION = ACTIVATETASK { TASK = TaskA; };
+        AUTOSTART = TRUE { APPMODE = stdAppmode; ALARMTIME = 977; CYCLETIME = 977; };
+    };
+    ALARM a1500msec {
+        COUNTER = SystemCounter;
+        ACTION = ACTIVATETASK { TASK = TaskB; };
+        AUTOSTART = TRUE { APPMODE = stdAppmode; ALARMTIME = 1465; CYCLETIME = 1465; };
+    };
+    ALARM a2800msec {
+        COUNTER = SystemCounter;
+        ACTION = ACTIVATETASK { TASK = TaskC; };
+        AUTOSTART = TRUE { APPMODE = stdAppmode; ALARMTIME = 2734; CYCLETIME = 2734; };
+    };
+    TASK TaskA {
+        PRIORITY = 3; /* w=2 */
+        AUTOSTART = TRUE { APPMODE = stdAppmode; };
+        ACTIVATION = 1;
+        SCHEDULE = FULL;
+        STACKSIZE = 256;
+    };
+    TASK TaskB {
+        PRIORITY = 2; /* w=7 */
+        AUTOSTART = TRUE { APPMODE = stdAppmode; };
+        ACTIVATION = 1;
+        SCHEDULE = FULL;
+        STACKSIZE = 256;
+    };
+    TASK TaskV {
+        PRIORITY = 1; /* w=3 */
+        AUTOSTART = TRUE { APPMODE = stdAppmode; };
+        ACTIVATION = 1;
+        SCHEDULE = FULL;
+        STACKSIZE = 256;
+    };
+};

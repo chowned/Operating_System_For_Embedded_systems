@@ -1,0 +1,4 @@
+/home/$USER/Documenti/trampoline/goil/makefile-unix/goil --target=avr/arduino/uno --templates=/home/$USER/Documenti/trampoline/goil/templates lab03_ex02.oil
+./build.py
+
+sudo sh -c "export AVRDUDE_PORT=/dev/ttyUSB0; ./make.py flash"

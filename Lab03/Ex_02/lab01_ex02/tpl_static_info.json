@@ -1,0 +1,121 @@
+
+{
+  "alarm" : 
+  [
+    
+    {
+      "ACTION" : "ACTIVATETASK",
+      "ACTION_S" : 
+      {
+        "TASK" : "TaskADC"
+      },
+      "AUTOSTART" : "true",
+      "AUTOSTART_S" : 
+      {
+        "ALARMTIME" : 293,
+        "APPMODE" : 
+        [
+          
+          {
+            "VALUE" : "stdAppmode"
+          }
+        ],
+        "CYCLETIME" : 293
+      },
+      "COUNTER" : "SystemCounter",
+      "NAME" : "a500msec"
+    },    
+    {
+      "ACTION" : "ACTIVATETASK",
+      "ACTION_S" : 
+      {
+        "TASK" : "TaskPWM"
+      },
+      "AUTOSTART" : "true",
+      "AUTOSTART_S" : 
+      {
+        "ALARMTIME" : 2,
+        "APPMODE" : 
+        [
+          
+          {
+            "VALUE" : "stdAppmode"
+          }
+        ],
+        "CYCLETIME" : 2
+      },
+      "COUNTER" : "SystemCounter",
+      "NAME" : "a750msec"
+    }
+  ],
+  "event" : [],
+  "ioc" : [],
+  "isr" : [],
+  "message" : 
+  [
+    
+    {
+      "MESSAGEPROPERTY" : "RECEIVE_UNQUEUED_INTERNAL",
+      "MESSAGEPROPERTY_S" : 
+      {
+        "FILTER" : "ALWAYS",
+        "INITIALVALUE" : 0,
+        "SENDINGMESSAGE" : "msgDataSend"
+      },
+      "NAME" : "msgDataReceiveUnqueued",
+      "NOTIFICATION" : "ACTIVATETASK",
+      "NOTIFICATIONERROR" : "NONE",
+      "NOTIFICATION_S" : 
+      {
+        "TASK" : "TaskPWM"
+      }
+    },    
+    {
+      "MESSAGEPROPERTY" : "SEND_STATIC_INTERNAL",
+      "MESSAGEPROPERTY_S" : 
+      {
+        "CDATATYPE" : "uint16"
+      },
+      "NAME" : "msgDataSend",
+      "NOTIFICATION" : "NONE",
+      "NOTIFICATIONERROR" : "NONE"
+    }
+  ],
+  "resource" : [],
+  "task" : 
+  [
+    
+    {
+      "ACTIVATION" : 1,
+      "AUTOSTART" : "false",
+      "KIND" : "Task",
+      "NAME" : "TaskPWM",
+      "NONPREEMPTABLE" : "false",
+      "PRIORITY" : 1,
+      "SCHEDULE" : "FULL",
+      "STACKSIZE" : 256,
+      "USEINTERNALRESOURCE" : "false"
+    },    
+    {
+      "ACTIVATION" : 1,
+      "AUTOSTART" : "true",
+      "AUTOSTART_S" : 
+      {
+        "APPMODE" : 
+        [
+          
+          {
+            "VALUE" : "stdAppmode"
+          }
+        ]
+      },
+      "KIND" : "Task",
+      "NAME" : "TaskADC",
+      "NONPREEMPTABLE" : "false",
+      "PRIORITY" : 2,
+      "SCHEDULE" : "FULL",
+      "STACKSIZE" : 256,
+      "USEINTERNALRESOURCE" : "false"
+    }
+  ]
+}
