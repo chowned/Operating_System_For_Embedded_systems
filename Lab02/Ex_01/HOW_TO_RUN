@@ -1,4 +1,4 @@
-../../goil/makefile-unix/goil --target=avr/arduino/uno --templates=../../goil/templates lab01_ex02.oil
+/home/gaetano/Documenti/trampoline/goil/makefile-unix/goil --target=avr/arduino/uno --templates=/home/gaetano/Documenti/trampoline/goil/templates lab02_ex01.oil
 ./build.py
 
 sudo sh -c "export AVRDUDE_PORT=/dev/ttyUSB0; ./make.py flash"

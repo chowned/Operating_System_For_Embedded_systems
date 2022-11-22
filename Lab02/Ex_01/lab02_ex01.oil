@@ -15,9 +15,9 @@ CPU only_one_periodic_task {
   OS config {
     STATUS = STANDARD;
     BUILD = TRUE {
-        APP_SRC = "lab01_ex02.cpp";
+        APP_SRC = "lab02_ex01.cpp";
         TRAMPOLINE_BASE_PATH = "/home/gaetano/Documenti/trampoline/";
-        APP_NAME = "ex2_exe";
+        APP_NAME = "lab_2_ex_1_exe";
 
         CPPCOMPILER = "avr-g++";
         COMPILER = "avr-gcc";
@@ -27,15 +27,11 @@ CPU only_one_periodic_task {
         SYSTEM = PYTHON;
     };
     SYSTEM_CALL = TRUE;
-
-    
   };
-
     APPMODE stdAppmode {};
-
     MESSAGE msgDataSend {
         MESSAGEPROPERTY = SEND_STATIC_INTERNAL { 
-            CDATATYPE = "uint16";
+            CDATATYPE = "uint8";
         };
     };
     MESSAGE msgDataReceiveUnqueued {
@@ -49,12 +45,12 @@ CPU only_one_periodic_task {
         };
     };
 
-    ALARM a500msec {
+    ALARM aADC {
         COUNTER = SystemCounter;
         ACTION = ACTIVATETASK { TASK = TaskADC; };
         AUTOSTART = TRUE { APPMODE = stdAppmode; ALARMTIME = 293; CYCLETIME = 293; };
     };
-    ALARM a750msec {
+    ALARM aPWM {
         COUNTER = SystemCounter;
         ACTION = ACTIVATETASK { TASK = TaskPWM; };
         AUTOSTART = TRUE { APPMODE = stdAppmode; ALARMTIME = 2; CYCLETIME = 2; };

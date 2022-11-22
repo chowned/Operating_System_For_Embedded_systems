@@ -23,7 +23,7 @@
         "CYCLETIME" : 293
       },
       "COUNTER" : "SystemCounter",
-      "NAME" : "a500msec"
+      "NAME" : "aADC"
     },    
     {
       "ACTION" : "ACTIVATETASK",
@@ -45,7 +45,7 @@
         "CYCLETIME" : 2
       },
       "COUNTER" : "SystemCounter",
-      "NAME" : "a750msec"
+      "NAME" : "aPWM"
     }
   ],
   "event" : [],
