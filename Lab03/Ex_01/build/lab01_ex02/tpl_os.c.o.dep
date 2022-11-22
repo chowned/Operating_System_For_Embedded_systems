@@ -1,0 +1,74 @@
+build/lab01_ex02/tpl_os.c.o: lab01_ex02/tpl_os.c lab01_ex02/tpl_os.h \
+ /home/gaetano/Documenti/trampoline//os/tpl_os_definitions.h \
+ /home/gaetano/Documenti/trampoline//os/tpl_os_application_def.h \
+ lab01_ex02/tpl_app_define.h \
+ /home/gaetano/Documenti/trampoline//os/tpl_config_def.h \
+ /home/gaetano/Documenti/trampoline//os/tpl_config_check.h \
+ /home/gaetano/Documenti/trampoline//os/tpl_os_application_def.h \
+ /home/gaetano/Documenti/trampoline//os/tpl_os_error.h \
+ /home/gaetano/Documenti/trampoline//os/tpl_os_types.h \
+ /home/gaetano/Documenti/trampoline//os/tpl_os_internal_types.h \
+ /home/gaetano/Documenti/trampoline//machines/posix/tpl_os_std_types.h \
+ /home/gaetano/Documenti/trampoline//os/tpl_os_custom_types.h \
+ lab01_ex02/tpl_app_custom_types.h \
+ /home/gaetano/Documenti/trampoline//os/tpl_compiler.h \
+ /home/gaetano/Documenti/trampoline//machines/posix/tpl_machine.h \
+ /usr/avr/include/setjmp.h /usr/avr/include/signal.h \
+ /usr/avr/include/unistd.h /usr/lib/gcc/avr/12.2.0/include/stddef.h \
+ /usr/avr/include/sys/types.h \
+ /home/gaetano/Documenti/trampoline//os/tpl_os_custom_types.h \
+ /home/gaetano/Documenti/trampoline//os/tpl_compiler.h \
+ /home/gaetano/Documenti/trampoline//os/tpl_memmap.h \
+ /home/gaetano/Documenti/trampoline//os/tpl_os_os.h \
+ /home/gaetano/Documenti/trampoline//os/tpl_os_interrupt.h \
+ /home/gaetano/Documenti/trampoline//os/tpl_os_task.h \
+ /home/gaetano/Documenti/trampoline//os/tpl_os_resource.h \
+ /home/gaetano/Documenti/trampoline//os/tpl_os_alarm.h \
+ /home/gaetano/Documenti/trampoline//os/tpl_os_os_kernel.h \
+ /home/gaetano/Documenti/trampoline//os/tpl_os_kernel.h \
+ /home/gaetano/Documenti/trampoline//os/tpl_os_multicore_macros.h \
+ /home/gaetano/Documenti/trampoline//os/tpl_os_interrupt_kernel.h \
+ /home/gaetano/Documenti/trampoline//os/tpl_os_task_kernel.h \
+ /home/gaetano/Documenti/trampoline//os/tpl_os_resource_kernel.h \
+ /home/gaetano/Documenti/trampoline//os/tpl_os_alarm_kernel.h \
+ /home/gaetano/Documenti/trampoline//os/tpl_os_timeobj_kernel.h \
+ /home/gaetano/Documenti/trampoline//os/tpl_os_action.h \
+ /home/gaetano/Documenti/trampoline//os/tpl_os_task_kernel.h
+lab01_ex02/tpl_os.h:
+/home/gaetano/Documenti/trampoline//os/tpl_os_definitions.h:
+/home/gaetano/Documenti/trampoline//os/tpl_os_application_def.h:
+lab01_ex02/tpl_app_define.h:
+/home/gaetano/Documenti/trampoline//os/tpl_config_def.h:
+/home/gaetano/Documenti/trampoline//os/tpl_config_check.h:
+/home/gaetano/Documenti/trampoline//os/tpl_os_application_def.h:
+/home/gaetano/Documenti/trampoline//os/tpl_os_error.h:
+/home/gaetano/Documenti/trampoline//os/tpl_os_types.h:
+/home/gaetano/Documenti/trampoline//os/tpl_os_internal_types.h:
+/home/gaetano/Documenti/trampoline//machines/posix/tpl_os_std_types.h:
+/home/gaetano/Documenti/trampoline//os/tpl_os_custom_types.h:
+lab01_ex02/tpl_app_custom_types.h:
+/home/gaetano/Documenti/trampoline//os/tpl_compiler.h:
+/home/gaetano/Documenti/trampoline//machines/posix/tpl_machine.h:
+/usr/avr/include/setjmp.h:
+/usr/avr/include/signal.h:
+/usr/avr/include/unistd.h:
+/usr/lib/gcc/avr/12.2.0/include/stddef.h:
+/usr/avr/include/sys/types.h:
+/home/gaetano/Documenti/trampoline//os/tpl_os_custom_types.h:
+/home/gaetano/Documenti/trampoline//os/tpl_compiler.h:
+/home/gaetano/Documenti/trampoline//os/tpl_memmap.h:
+/home/gaetano/Documenti/trampoline//os/tpl_os_os.h:
+/home/gaetano/Documenti/trampoline//os/tpl_os_interrupt.h:
+/home/gaetano/Documenti/trampoline//os/tpl_os_task.h:
+/home/gaetano/Documenti/trampoline//os/tpl_os_resource.h:
+/home/gaetano/Documenti/trampoline//os/tpl_os_alarm.h:
+/home/gaetano/Documenti/trampoline//os/tpl_os_os_kernel.h:
+/home/gaetano/Documenti/trampoline//os/tpl_os_kernel.h:
+/home/gaetano/Documenti/trampoline//os/tpl_os_multicore_macros.h:
+/home/gaetano/Documenti/trampoline//os/tpl_os_interrupt_kernel.h:
+/home/gaetano/Documenti/trampoline//os/tpl_os_task_kernel.h:
+/home/gaetano/Documenti/trampoline//os/tpl_os_resource_kernel.h:
+/home/gaetano/Documenti/trampoline//os/tpl_os_alarm_kernel.h:
+/home/gaetano/Documenti/trampoline//os/tpl_os_timeobj_kernel.h:
+/home/gaetano/Documenti/trampoline//os/tpl_os_action.h:
+/home/gaetano/Documenti/trampoline//os/tpl_os_task_kernel.h:
