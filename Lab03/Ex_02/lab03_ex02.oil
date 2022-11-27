@@ -13,7 +13,7 @@ CPU three_tasks {
     STATUS = STANDARD;
     BUILD = TRUE {
         APP_SRC = "lab03_ex02.cpp";
-        TRAMPOLINE_BASE_PATH = "/home/$USER/Documenti/trampoline/";
+        TRAMPOLINE_BASE_PATH = "/home/gulistan/Documents/trampoline/";
         APP_NAME = "ex2_exe";
 
         CPPCOMPILER = "avr-g++";
@@ -52,6 +52,7 @@ CPU three_tasks {
         ACTIVATION = 1;
         SCHEDULE = FULL;
         STACKSIZE = 256;
+        RESOURCE = toctocCanI;
     };
     TASK TaskB {
         PRIORITY = 2; /* w=7 */
@@ -60,11 +61,12 @@ CPU three_tasks {
         SCHEDULE = FULL;
         STACKSIZE = 256;
     };
-    TASK TaskV {
+    TASK TaskC {
         PRIORITY = 1; /* w=3 */
         AUTOSTART = TRUE { APPMODE = stdAppmode; };
         ACTIVATION = 1;
         SCHEDULE = FULL;
         STACKSIZE = 256;
+        RESOURCE = toctocCanI;
     };
 };

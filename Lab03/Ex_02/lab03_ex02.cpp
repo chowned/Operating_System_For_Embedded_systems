@@ -15,24 +15,31 @@ which is legally registered on github.
 #include "Arduino.h"
 #include <stdlib.h>
 
-#define PIN_OUTPUT_TASK_A 1
-#define PIN_OUTPUT_TASK_B 2
-#define PIN_OUTPUT_TASK_C 3
+#define PIN_OUTPUT_TASK_A   1
+#define PIN_OUTPUT_TASK_B   2
+#define PIN_OUTPUT_TASK_C   3
+#define PIN_OUTPUT_RESOURCE 7
 
 DeclareResource(toctocCanI);
 
-//GetResource(toctocCanI);
-//something blocked here
-//ReleaseResource(toctocCanI);
-
-void do_things(int ms, int outputPin)
+void do_things(int ms, int outputPin, bool stopResource)
 {
-    unsigned long mul = ms * 504UL;
+    unsigned long mul = ms * 198UL; //* 504UL / 3;
     unsigned long i;
+    if( stopResource )
+    {
+        GetResource(toctocCanI);
+        digitalWrite(PIN_OUTPUT_RESOURCE, HIGH);
+    }
+    digitalWrite(outputPin, HIGH);
     for(i=0; i<mul; i++)
-        digitalWrite(outputPin, HIGH);
         millis();
     digitalWrite(outputPin, LOW);
+    if( stopResource )
+    {
+        ReleaseResource(toctocCanI);
+        digitalWrite(PIN_OUTPUT_RESOURCE, LOW);
+    }
 }
 
 void setup()
@@ -40,20 +47,22 @@ void setup()
 	pinMode(PIN_OUTPUT_TASK_A, OUTPUT);
     pinMode(PIN_OUTPUT_TASK_B, OUTPUT);
     pinMode(PIN_OUTPUT_TASK_C, OUTPUT);
+    pinMode(PIN_OUTPUT_RESOURCE, OUTPUT);
 }
 
 TASK(TaskA)
 {
-    do_things(1000,PIN_OUTPUT_TASK_A);
+    do_things(200,PIN_OUTPUT_TASK_A,true);
     TerminateTask();
 }
 TASK(TaskB) 
 {
-    do_things(1500,PIN_OUTPUT_TASK_B);
+    do_things(700,PIN_OUTPUT_TASK_B,false);
     TerminateTask();
 }
 TASK(TaskC) 
 {
-    do_things(2800,PIN_OUTPUT_TASK_C);
+    do_things(100,PIN_OUTPUT_TASK_C,false);
+    do_things(200,PIN_OUTPUT_TASK_C,true);
     TerminateTask();
 }
