@@ -50,14 +50,14 @@ CPU three_tasks {
     };
     TASK TaskB {
         PRIORITY = 2; /* w=7 */
-        AUTOSTART = TRUE { APPMODE = stdAppmode; };
+        AUTOSTART = FALSE ;
         ACTIVATION = 1;
         SCHEDULE = FULL;
         STACKSIZE = 256;
     };
-    TASK TaskV {
+    TASK TaskC {
         PRIORITY = 1; /* w=3 */
-        AUTOSTART = TRUE { APPMODE = stdAppmode; };
+        AUTOSTART = FALSE ;
         ACTIVATION = 1;
         SCHEDULE = FULL;
         STACKSIZE = 256;
