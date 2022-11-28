@@ -33,6 +33,7 @@ build/machines/avr/tpl_machine.c.o: \
  /home/gulistan/Documents/trampoline//os/tpl_os_interrupt.h \
  /home/gulistan/Documents/trampoline//os/tpl_os_task.h \
  /home/gulistan/Documents/trampoline//os/tpl_os_resource.h \
+ /home/gulistan/Documents/trampoline//os/tpl_os_event.h \
  /home/gulistan/Documents/trampoline//os/tpl_os_alarm.h \
  /home/gulistan/Documents/trampoline//com/tpl_com_internal.h \
  /home/gulistan/Documents/trampoline//com/tpl_com_types.h \
@@ -78,6 +79,7 @@ lab03_ex03/tpl_os.h:
 /home/gulistan/Documents/trampoline//os/tpl_os_interrupt.h:
 /home/gulistan/Documents/trampoline//os/tpl_os_task.h:
 /home/gulistan/Documents/trampoline//os/tpl_os_resource.h:
+/home/gulistan/Documents/trampoline//os/tpl_os_event.h:
 /home/gulistan/Documents/trampoline//os/tpl_os_alarm.h:
 /home/gulistan/Documents/trampoline//com/tpl_com_internal.h:
 /home/gulistan/Documents/trampoline//com/tpl_com_types.h:

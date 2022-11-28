@@ -70,7 +70,15 @@
       "NAME" : "a2800msec"
     }
   ],
-  "event" : [],
+  "event" : 
+  [
+    
+    {
+      "MASK" : 1,
+      "NAME" : "heyImHere",
+      "REF" : 2
+    }
+  ],
   "ioc" : [],
   "isr" : [],
   "message" : 
@@ -96,8 +104,12 @@
         "CDATATYPE" : "uint8"
       },
       "NAME" : "msgDataSend",
-      "NOTIFICATION" : "NONE",
-      "NOTIFICATIONERROR" : "NONE"
+      "NOTIFICATION" : "SETEVENT",
+      "NOTIFICATIONERROR" : "NONE",
+      "NOTIFICATION_S" : 
+      {
+        "EVENT" : "heyImHere"
+      }
     }
   ],
   "resource" : [],
@@ -117,10 +129,65 @@
           }
         ]
       },
+      "EVENT" : 
+      [
+        
+        {
+          "VALUE" : "heyImHere"
+        }
+      ],
       "KIND" : "Task",
+      "MESSAGE" : 
+      [
+        
+        {
+          "VALUE" : "msgDataSend"
+        },        
+        {
+          "VALUE" : "msgDataReceiveUnqueued"
+        }
+      ],
       "NAME" : "TaskC",
       "NONPREEMPTABLE" : "false",
       "PRIORITY" : 1,
+      "SCHEDULE" : "FULL",
+      "STACKSIZE" : 256,
+      "USEINTERNALRESOURCE" : "false"
+    },    
+    {
+      "ACTIVATION" : 1,
+      "AUTOSTART" : "true",
+      "AUTOSTART_S" : 
+      {
+        "APPMODE" : 
+        [
+          
+          {
+            "VALUE" : "stdAppmode"
+          }
+        ]
+      },
+      "EVENT" : 
+      [
+        
+        {
+          "VALUE" : "heyImHere"
+        }
+      ],
+      "KIND" : "Task",
+      "MESSAGE" : 
+      [
+        
+        {
+          "VALUE" : "msgDataSend"
+        },        
+        {
+          "VALUE" : "msgDataReceiveUnqueued"
+        }
+      ],
+      "NAME" : "TaskA",
+      "NONPREEMPTABLE" : "false",
+      "PRIORITY" : 3,
       "SCHEDULE" : "FULL",
       "STACKSIZE" : 256,
       "USEINTERNALRESOURCE" : "false"
@@ -142,27 +209,6 @@
       "NAME" : "TaskB",
       "NONPREEMPTABLE" : "false",
       "PRIORITY" : 2,
-      "SCHEDULE" : "FULL",
-      "STACKSIZE" : 256,
-      "USEINTERNALRESOURCE" : "false"
-    },    
-    {
-      "ACTIVATION" : 1,
-      "AUTOSTART" : "true",
-      "AUTOSTART_S" : 
-      {
-        "APPMODE" : 
-        [
-          
-          {
-            "VALUE" : "stdAppmode"
-          }
-        ]
-      },
-      "KIND" : "Task",
-      "NAME" : "TaskA",
-      "NONPREEMPTABLE" : "false",
-      "PRIORITY" : 3,
       "SCHEDULE" : "FULL",
       "STACKSIZE" : 256,
       "USEINTERNALRESOURCE" : "false"

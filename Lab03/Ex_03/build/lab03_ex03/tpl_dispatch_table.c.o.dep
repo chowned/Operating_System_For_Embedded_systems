@@ -21,10 +21,12 @@ build/lab03_ex03/tpl_dispatch_table.c.o: lab03_ex03/tpl_dispatch_table.c \
  /home/gulistan/Documents/trampoline//os/tpl_os_interrupt_kernel.h \
  /home/gulistan/Documents/trampoline//os/tpl_os_task_kernel.h \
  /home/gulistan/Documents/trampoline//os/tpl_os_resource_kernel.h \
+ /home/gulistan/Documents/trampoline//os/tpl_os_event_kernel.h \
+ /home/gulistan/Documents/trampoline//os/tpl_os_types.h \
+ /home/gulistan/Documents/trampoline//os/tpl_os_task_kernel.h \
  /home/gulistan/Documents/trampoline//os/tpl_os_alarm_kernel.h \
  /home/gulistan/Documents/trampoline//os/tpl_os_timeobj_kernel.h \
  /home/gulistan/Documents/trampoline//os/tpl_os_action.h \
- /home/gulistan/Documents/trampoline//os/tpl_os_task_kernel.h \
  /home/gulistan/Documents/trampoline//com/tpl_com_message_kernel.h \
  /home/gulistan/Documents/trampoline//com/tpl_com_types.h \
  /home/gulistan/Documents/trampoline//os/tpl_os_internal_types.h \
@@ -51,10 +53,12 @@ lab03_ex03/tpl_app_custom_types.h:
 /home/gulistan/Documents/trampoline//os/tpl_os_interrupt_kernel.h:
 /home/gulistan/Documents/trampoline//os/tpl_os_task_kernel.h:
 /home/gulistan/Documents/trampoline//os/tpl_os_resource_kernel.h:
+/home/gulistan/Documents/trampoline//os/tpl_os_event_kernel.h:
+/home/gulistan/Documents/trampoline//os/tpl_os_types.h:
+/home/gulistan/Documents/trampoline//os/tpl_os_task_kernel.h:
 /home/gulistan/Documents/trampoline//os/tpl_os_alarm_kernel.h:
 /home/gulistan/Documents/trampoline//os/tpl_os_timeobj_kernel.h:
 /home/gulistan/Documents/trampoline//os/tpl_os_action.h:
-/home/gulistan/Documents/trampoline//os/tpl_os_task_kernel.h:
 /home/gulistan/Documents/trampoline//com/tpl_com_message_kernel.h:
 /home/gulistan/Documents/trampoline//com/tpl_com_types.h:
 /home/gulistan/Documents/trampoline//os/tpl_os_internal_types.h:

@@ -14,7 +14,7 @@ CPU three_tasks {
     BUILD = TRUE {
         APP_SRC = "lab03_ex03.cpp";
         TRAMPOLINE_BASE_PATH = "/home/gulistan/Documents/trampoline/";
-        APP_NAME = "ex3_exe";
+        APP_NAME = "Lab_3_ex_3_exe";
 
         CPPCOMPILER = "avr-g++";
         COMPILER = "avr-gcc";
@@ -27,9 +27,16 @@ CPU three_tasks {
   };
     APPMODE stdAppmode {};
 
+    EVENT heyImHere {
+        MASK = AUTO;
+    };
+
     MESSAGE msgDataSend {
         MESSAGEPROPERTY = SEND_STATIC_INTERNAL { 
             CDATATYPE = "uint8";
+        };
+        NOTIFICATION = SETEVENT {
+            EVENT = heyImHere;
         };
     };
     MESSAGE msgDataReceiveUnqueued {
@@ -39,9 +46,7 @@ CPU three_tasks {
             INITIALVALUE    =   0x00;
             QUEUESIZE = 3;
         };
-        /*NOTIFICATION = ACTIVATETASK{
-            TASK = TaskA;
-        };*/
+        
     };
 
     ALARM a1000msec {
@@ -65,7 +70,9 @@ CPU three_tasks {
         ACTIVATION = 1;
         SCHEDULE = FULL;
         STACKSIZE = 256;
-        
+        EVENT = heyImHere;
+        MESSAGE = msgDataSend;
+        MESSAGE = msgDataReceiveUnqueued;
     };
     TASK TaskB {
         PRIORITY = 2; /* w=7 */
@@ -80,6 +87,8 @@ CPU three_tasks {
         ACTIVATION = 1;
         SCHEDULE = FULL;
         STACKSIZE = 256;
-        
+        EVENT = heyImHere;
+        MESSAGE = msgDataSend;
+        MESSAGE = msgDataReceiveUnqueued;
     };
 };

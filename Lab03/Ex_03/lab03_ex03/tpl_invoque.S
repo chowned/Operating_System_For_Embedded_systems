@@ -233,6 +233,46 @@ ReleaseResource:
 //  .size ReleaseResource,$-ReleaseResource
 
 
+  .global SetEvent
+SetEvent:
+  ldi r30,OSServiceId_SetEvent  /* load the service id in r30 */
+  call tpl_sc_handler
+  ret
+  
+  .type SetEvent,@function
+//  .size SetEvent,$-SetEvent
+
+
+  .global ClearEvent
+ClearEvent:
+  ldi r30,OSServiceId_ClearEvent  /* load the service id in r30 */
+  call tpl_sc_handler
+  ret
+  
+  .type ClearEvent,@function
+//  .size ClearEvent,$-ClearEvent
+
+
+  .global GetEvent
+GetEvent:
+  ldi r30,OSServiceId_GetEvent  /* load the service id in r30 */
+  call tpl_sc_handler
+  ret
+  
+  .type GetEvent,@function
+//  .size GetEvent,$-GetEvent
+
+
+  .global WaitEvent
+WaitEvent:
+  ldi r30,OSServiceId_WaitEvent  /* load the service id in r30 */
+  call tpl_sc_handler
+  ret
+  
+  .type WaitEvent,@function
+//  .size WaitEvent,$-WaitEvent
+
+
   .global GetAlarmBase
 GetAlarmBase:
   ldi r30,OSServiceId_GetAlarmBase  /* load the service id in r30 */

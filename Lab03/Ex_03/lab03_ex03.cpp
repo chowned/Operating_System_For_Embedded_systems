@@ -20,58 +20,54 @@ which is legally registered on github.
 #define PIN_OUTPUT_TASK_C   3
 #define PIN_OUTPUT_RESOURCE 7
 
-// SendMessage(msgDataSend, &resource);
-// ReceiveMessage(msgDataReceiveUnqueued, &resource);
+// bool resourceUsed = true;
+// uint8 resource = 0;
 
 void do_things(int ms, int outputPin, bool stopResource)
 {
     unsigned long mul = ms * 198UL; //* 504UL / 3;
     unsigned long i;
-    char resource;
+    uint8 resourceUsed=1;
     if( stopResource )
     {
-        while(ReceiveMessage(msgDataReceiveUnqueued, &resource) == E_COM_NOMSG )
+        // WaitEvent(heyImHere);
+        while(resourceUsed){
+            ReceiveMessage(msgDataReceiveUnqueued, &resourceUsed);
+        }
+        
+        resourceUsed=true;
         // ReceiveMessage(msgDataReceiveUnqueued, &resource);
         digitalWrite(PIN_OUTPUT_RESOURCE, HIGH);
     }
     digitalWrite(PIN_OUTPUT_TASK_A, LOW);
     digitalWrite(PIN_OUTPUT_TASK_B, LOW);
     digitalWrite(PIN_OUTPUT_TASK_C, LOW);
-    digitalWrite(outputPin, HIGH);
     for(i=0; i<mul; i++)
+    digitalWrite(outputPin, HIGH);
         millis();
     digitalWrite(outputPin, LOW);
     if( stopResource )
     {
-        SendMessage(msgDataSend, &resource);
+        // resourceUsed=false;
+        resourceUsed=0;
+        SendMessage(msgDataSend, &resourceUsed);
         digitalWrite(PIN_OUTPUT_RESOURCE, LOW);
     }
 }
 
 void setup()
 {
-    // uint8 resource=0;
+    uint8 resourceUsed=0;
 	pinMode(PIN_OUTPUT_TASK_A, OUTPUT);
     pinMode(PIN_OUTPUT_TASK_B, OUTPUT);
     pinMode(PIN_OUTPUT_TASK_C, OUTPUT);
     pinMode(PIN_OUTPUT_RESOURCE, OUTPUT);
-
-    // msgDataSend(msgDataSend,&resource);
+    SendMessage(msgDataSend, &resourceUsed);
 }
 
 TASK(TaskA)
 {
-    bool blockResource = true;
-    static uint8 counter = 0;
-    // uint8 resource=0;
-    if(counter==0)
-    {
-        counter=2;
-        blockResource = true;
-        // msgDataSend(msgDataSend,&resource);
-    }
-    do_things(200,PIN_OUTPUT_TASK_A,blockResource);
-    // counter--;
+    do_things(200,PIN_OUTPUT_TASK_A,true);
     TerminateTask();
 }
 TASK(TaskB) 
