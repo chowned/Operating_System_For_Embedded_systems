@@ -1,5 +1,5 @@
 # Operating System For Embedded Systems
-## Repository for the course of Politecnico di Torino for my and my teammate.
+## Repository for the course of Politecnico di Torino for me and my teammate.
 
 I hope this code will help anyone that wants to learn trampoline
 
