@@ -46,9 +46,7 @@ CPU three_tasks {
             INITIALVALUE    =   0x00;
             QUEUESIZE = 3;
         };
-        
     };
-
     ALARM a1000msec {
         COUNTER = SystemCounter;
         ACTION = ACTIVATETASK { TASK = TaskA; };

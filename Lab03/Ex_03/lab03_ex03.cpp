@@ -20,25 +20,28 @@ which is legally registered on github.
 #define PIN_OUTPUT_TASK_C   3
 #define PIN_OUTPUT_RESOURCE 7
 
-// bool resourceUsed = true;
-// uint8 resource = 0;
-
-void do_things(int ms, int outputPin, bool stopResource)
+void unlockResource(uint8* resourceUsed)
 {
-    unsigned long mul = ms * 198UL; //* 504UL / 3;
-    unsigned long i;
-    uint8 resourceUsed=1;
-    if( stopResource )
-    {
-        // WaitEvent(heyImHere);
-        while(resourceUsed){
-            ReceiveMessage(msgDataReceiveUnqueued, &resourceUsed);
+    *resourceUsed=0;
+    SendMessage(msgDataSend, resourceUsed);
+    digitalWrite(PIN_OUTPUT_RESOURCE, LOW);
+}
+void blockResource(uint8* resourceUsed)
+{
+    while(*resourceUsed){
+            ReceiveMessage(msgDataReceiveUnqueued, resourceUsed);
         }
         
-        resourceUsed=true;
+        *resourceUsed=1;
         // ReceiveMessage(msgDataReceiveUnqueued, &resource);
         digitalWrite(PIN_OUTPUT_RESOURCE, HIGH);
-    }
+}
+
+void do_things(int ms, int outputPin)
+{
+    unsigned long mul = ms * 155UL; //* 504UL / 3;
+    unsigned long i;
+    
     digitalWrite(PIN_OUTPUT_TASK_A, LOW);
     digitalWrite(PIN_OUTPUT_TASK_B, LOW);
     digitalWrite(PIN_OUTPUT_TASK_C, LOW);
@@ -46,13 +49,6 @@ void do_things(int ms, int outputPin, bool stopResource)
     digitalWrite(outputPin, HIGH);
         millis();
     digitalWrite(outputPin, LOW);
-    if( stopResource )
-    {
-        // resourceUsed=false;
-        resourceUsed=0;
-        SendMessage(msgDataSend, &resourceUsed);
-        digitalWrite(PIN_OUTPUT_RESOURCE, LOW);
-    }
 }
 
 void setup()
@@ -67,17 +63,23 @@ void setup()
 
 TASK(TaskA)
 {
-    do_things(200,PIN_OUTPUT_TASK_A,true);
+    uint8 resourceUsed=1;
+    blockResource(&resourceUsed);
+    do_things(200,PIN_OUTPUT_TASK_A);
+    unlockResource(&resourceUsed);
     TerminateTask();
 }
 TASK(TaskB) 
 {
-    do_things(700,PIN_OUTPUT_TASK_B,false);
+    do_things(700,PIN_OUTPUT_TASK_B);
     TerminateTask();
 }
 TASK(TaskC) 
 {
-    do_things(100,PIN_OUTPUT_TASK_C,false);
-    do_things(200,PIN_OUTPUT_TASK_C,true);
+    uint8 resourceUsed=1;
+    do_things(100,PIN_OUTPUT_TASK_C);
+    blockResource(&resourceUsed);
+    do_things(200,PIN_OUTPUT_TASK_C);
+    unlockResource(&resourceUsed);
     TerminateTask();
 }

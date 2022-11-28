@@ -22,24 +22,24 @@ which is legally registered on github.
 
 DeclareResource(toctocCanI);
 
-void do_things(int ms, int outputPin, bool stopResource)
+void unlockResource()
 {
-    unsigned long mul = ms * 155UL; //* 504UL / 3;
+    ReleaseResource(toctocCanI);
+    digitalWrite(PIN_OUTPUT_RESOURCE, LOW);
+}
+void blockResource()
+{
+    GetResource(toctocCanI);
+    digitalWrite(PIN_OUTPUT_RESOURCE, HIGH);
+}
+void do_things(int ms, int outputPin)
+{
+    unsigned long mul = ms * 195UL; //* 504UL / 3;
     unsigned long i;
-    if( stopResource )
-    {
-        GetResource(toctocCanI);
-        digitalWrite(PIN_OUTPUT_RESOURCE, HIGH);
-    }
     digitalWrite(outputPin, HIGH);
     for(i=0; i<mul; i++)
         millis();
     digitalWrite(outputPin, LOW);
-    if( stopResource )
-    {
-        ReleaseResource(toctocCanI);
-        digitalWrite(PIN_OUTPUT_RESOURCE, LOW);
-    }
 }
 
 void setup()
@@ -52,17 +52,21 @@ void setup()
 
 TASK(TaskA)
 {
-    do_things(200,PIN_OUTPUT_TASK_A,true);
+    blockResource();
+    do_things(200,PIN_OUTPUT_TASK_A);
+    unlockResource();
     TerminateTask();
 }
 TASK(TaskB) 
 {
-    do_things(700,PIN_OUTPUT_TASK_B,false);
+    do_things(700,PIN_OUTPUT_TASK_B);
     TerminateTask();
 }
 TASK(TaskC) 
 {
-    do_things(100,PIN_OUTPUT_TASK_C,false);
-    do_things(200,PIN_OUTPUT_TASK_C,true);
+    do_things(100,PIN_OUTPUT_TASK_C);
+    blockResource();
+    do_things(200,PIN_OUTPUT_TASK_C);
+    unlockResource();
     TerminateTask();
 }
