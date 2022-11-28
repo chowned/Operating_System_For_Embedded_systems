@@ -15,39 +15,73 @@ which is legally registered on github.
 #include "Arduino.h"
 #include <stdlib.h>
 
-#define PIN_OUTPUT_TASK_A 1
-#define PIN_OUTPUT_TASK_B 2
-#define PIN_OUTPUT_TASK_C 3
+#define PIN_OUTPUT_TASK_A   1
+#define PIN_OUTPUT_TASK_B   2
+#define PIN_OUTPUT_TASK_C   3
+#define PIN_OUTPUT_RESOURCE 7
 
-void do_things(int ms, int outputPin)
+// SendMessage(msgDataSend, &resource);
+// ReceiveMessage(msgDataReceiveUnqueued, &resource);
+
+void do_things(int ms, int outputPin, bool stopResource)
 {
-    unsigned long mul = ms * 504UL;
+    unsigned long mul = ms * 198UL; //* 504UL / 3;
     unsigned long i;
+    char resource;
+    if( stopResource )
+    {
+        while(ReceiveMessage(msgDataReceiveUnqueued, &resource) == E_COM_NOMSG )
+        // ReceiveMessage(msgDataReceiveUnqueued, &resource);
+        digitalWrite(PIN_OUTPUT_RESOURCE, HIGH);
+    }
+    digitalWrite(PIN_OUTPUT_TASK_A, LOW);
+    digitalWrite(PIN_OUTPUT_TASK_B, LOW);
+    digitalWrite(PIN_OUTPUT_TASK_C, LOW);
+    digitalWrite(outputPin, HIGH);
     for(i=0; i<mul; i++)
-        digitalWrite(outputPin, HIGH);
         millis();
     digitalWrite(outputPin, LOW);
+    if( stopResource )
+    {
+        SendMessage(msgDataSend, &resource);
+        digitalWrite(PIN_OUTPUT_RESOURCE, LOW);
+    }
 }
 
 void setup()
 {
+    // uint8 resource=0;
 	pinMode(PIN_OUTPUT_TASK_A, OUTPUT);
     pinMode(PIN_OUTPUT_TASK_B, OUTPUT);
     pinMode(PIN_OUTPUT_TASK_C, OUTPUT);
+    pinMode(PIN_OUTPUT_RESOURCE, OUTPUT);
+
+    // msgDataSend(msgDataSend,&resource);
 }
 
 TASK(TaskA)
 {
-    do_things(1000,PIN_OUTPUT_TASK_A);
+    bool blockResource = true;
+    static uint8 counter = 0;
+    // uint8 resource=0;
+    if(counter==0)
+    {
+        counter=2;
+        blockResource = true;
+        // msgDataSend(msgDataSend,&resource);
+    }
+    do_things(200,PIN_OUTPUT_TASK_A,blockResource);
+    // counter--;
     TerminateTask();
 }
 TASK(TaskB) 
 {
-    do_things(1500,PIN_OUTPUT_TASK_B);
+    do_things(700,PIN_OUTPUT_TASK_B,false);
     TerminateTask();
 }
 TASK(TaskC) 
 {
-    do_things(2800,PIN_OUTPUT_TASK_C);
+    do_things(100,PIN_OUTPUT_TASK_C,false);
+    do_things(200,PIN_OUTPUT_TASK_C,true);
     TerminateTask();
 }

@@ -1,42 +1,42 @@
 build/machines/avr/tpl_machine.c.o: \
- /home/gaetano/Documenti/trampoline//machines/avr/tpl_machine.c \
+ /home/gulistan/Documents/trampoline//machines/avr/tpl_machine.c \
  /usr/avr/include/avr/io.h /usr/avr/include/avr/sfr_defs.h \
  /usr/avr/include/inttypes.h /usr/lib/gcc/avr/12.2.0/include/stdint.h \
  /usr/avr/include/stdint.h /usr/avr/include/avr/iom328p.h \
  /usr/avr/include/avr/portpins.h /usr/avr/include/avr/common.h \
  /usr/avr/include/avr/version.h /usr/avr/include/avr/fuse.h \
  /usr/avr/include/avr/lock.h /usr/avr/include/avr/interrupt.h \
- /home/gaetano/Documenti/trampoline//machines/avr/tpl_machine.h \
- /home/gaetano/Documenti/trampoline//os/tpl_os_custom_types.h \
- /home/gaetano/Documenti/trampoline//os/tpl_os_application_def.h \
- lab01_ex02/tpl_app_define.h \
- /home/gaetano/Documenti/trampoline//os/tpl_config_def.h \
- /home/gaetano/Documenti/trampoline//os/tpl_config_check.h \
- lab01_ex02/tpl_app_custom_types.h \
- /home/gaetano/Documenti/trampoline//os/tpl_compiler.h \
- /home/gaetano/Documenti/trampoline//machines/avr/tpl_os_std_types.h \
- /home/gaetano/Documenti/trampoline//os/tpl_os_application_def.h \
- lab01_ex02/tpl_app_config.h lab01_ex02/tpl_app_define.h \
- /home/gaetano/Documenti/trampoline//os/tpl_os_internal_types.h \
- /home/gaetano/Documenti/trampoline//os/tpl_os_custom_types.h \
- /home/gaetano/Documenti/trampoline//machines/avr/tpl_machine.h \
- /home/gaetano/Documenti/trampoline//os/tpl_compiler.h \
- /home/gaetano/Documenti/trampoline//os/tpl_memmap.h \
- /home/gaetano/Documenti/trampoline//os/tpl_os_definitions.h \
- /home/gaetano/Documenti/trampoline//os/tpl_os_kernel.h \
- /home/gaetano/Documenti/trampoline//os/tpl_os_internal_types.h \
- /home/gaetano/Documenti/trampoline//os/tpl_os_multicore_macros.h \
- /home/gaetano/Documenti/trampoline//os/tpl_memmap.h lab01_ex02/tpl_os.h \
- /home/gaetano/Documenti/trampoline//os/tpl_os_error.h \
- /home/gaetano/Documenti/trampoline//os/tpl_os_types.h \
- /home/gaetano/Documenti/trampoline//os/tpl_os_os.h \
- /home/gaetano/Documenti/trampoline//os/tpl_os_interrupt.h \
- /home/gaetano/Documenti/trampoline//os/tpl_os_task.h \
- /home/gaetano/Documenti/trampoline//os/tpl_os_resource.h \
- /home/gaetano/Documenti/trampoline//os/tpl_os_alarm.h \
- /home/gaetano/Documenti/trampoline//com/tpl_com_internal.h \
- /home/gaetano/Documenti/trampoline//com/tpl_com_types.h \
- /home/gaetano/Documenti/trampoline//os/tpl_os_types.h
+ /home/gulistan/Documents/trampoline//machines/avr/tpl_machine.h \
+ /home/gulistan/Documents/trampoline//os/tpl_os_custom_types.h \
+ /home/gulistan/Documents/trampoline//os/tpl_os_application_def.h \
+ lab03_ex03/tpl_app_define.h \
+ /home/gulistan/Documents/trampoline//os/tpl_config_def.h \
+ /home/gulistan/Documents/trampoline//os/tpl_config_check.h \
+ lab03_ex03/tpl_app_custom_types.h \
+ /home/gulistan/Documents/trampoline//os/tpl_compiler.h \
+ /home/gulistan/Documents/trampoline//machines/avr/tpl_os_std_types.h \
+ /home/gulistan/Documents/trampoline//os/tpl_os_application_def.h \
+ lab03_ex03/tpl_app_config.h lab03_ex03/tpl_app_define.h \
+ /home/gulistan/Documents/trampoline//os/tpl_os_internal_types.h \
+ /home/gulistan/Documents/trampoline//os/tpl_os_custom_types.h \
+ /home/gulistan/Documents/trampoline//machines/avr/tpl_machine.h \
+ /home/gulistan/Documents/trampoline//os/tpl_compiler.h \
+ /home/gulistan/Documents/trampoline//os/tpl_memmap.h \
+ /home/gulistan/Documents/trampoline//os/tpl_os_definitions.h \
+ /home/gulistan/Documents/trampoline//os/tpl_os_kernel.h \
+ /home/gulistan/Documents/trampoline//os/tpl_os_internal_types.h \
+ /home/gulistan/Documents/trampoline//os/tpl_os_multicore_macros.h \
+ /home/gulistan/Documents/trampoline//os/tpl_memmap.h lab03_ex03/tpl_os.h \
+ /home/gulistan/Documents/trampoline//os/tpl_os_error.h \
+ /home/gulistan/Documents/trampoline//os/tpl_os_types.h \
+ /home/gulistan/Documents/trampoline//os/tpl_os_os.h \
+ /home/gulistan/Documents/trampoline//os/tpl_os_interrupt.h \
+ /home/gulistan/Documents/trampoline//os/tpl_os_task.h \
+ /home/gulistan/Documents/trampoline//os/tpl_os_resource.h \
+ /home/gulistan/Documents/trampoline//os/tpl_os_alarm.h \
+ /home/gulistan/Documents/trampoline//com/tpl_com_internal.h \
+ /home/gulistan/Documents/trampoline//com/tpl_com_types.h \
+ /home/gulistan/Documents/trampoline//os/tpl_os_types.h
 /usr/avr/include/avr/io.h:
 /usr/avr/include/avr/sfr_defs.h:
 /usr/avr/include/inttypes.h:
@@ -49,36 +49,36 @@ build/machines/avr/tpl_machine.c.o: \
 /usr/avr/include/avr/fuse.h:
 /usr/avr/include/avr/lock.h:
 /usr/avr/include/avr/interrupt.h:
-/home/gaetano/Documenti/trampoline//machines/avr/tpl_machine.h:
-/home/gaetano/Documenti/trampoline//os/tpl_os_custom_types.h:
-/home/gaetano/Documenti/trampoline//os/tpl_os_application_def.h:
-lab01_ex02/tpl_app_define.h:
-/home/gaetano/Documenti/trampoline//os/tpl_config_def.h:
-/home/gaetano/Documenti/trampoline//os/tpl_config_check.h:
-lab01_ex02/tpl_app_custom_types.h:
-/home/gaetano/Documenti/trampoline//os/tpl_compiler.h:
-/home/gaetano/Documenti/trampoline//machines/avr/tpl_os_std_types.h:
-/home/gaetano/Documenti/trampoline//os/tpl_os_application_def.h:
-lab01_ex02/tpl_app_config.h:
-lab01_ex02/tpl_app_define.h:
-/home/gaetano/Documenti/trampoline//os/tpl_os_internal_types.h:
-/home/gaetano/Documenti/trampoline//os/tpl_os_custom_types.h:
-/home/gaetano/Documenti/trampoline//machines/avr/tpl_machine.h:
-/home/gaetano/Documenti/trampoline//os/tpl_compiler.h:
-/home/gaetano/Documenti/trampoline//os/tpl_memmap.h:
-/home/gaetano/Documenti/trampoline//os/tpl_os_definitions.h:
-/home/gaetano/Documenti/trampoline//os/tpl_os_kernel.h:
-/home/gaetano/Documenti/trampoline//os/tpl_os_internal_types.h:
-/home/gaetano/Documenti/trampoline//os/tpl_os_multicore_macros.h:
-/home/gaetano/Documenti/trampoline//os/tpl_memmap.h:
-lab01_ex02/tpl_os.h:
-/home/gaetano/Documenti/trampoline//os/tpl_os_error.h:
-/home/gaetano/Documenti/trampoline//os/tpl_os_types.h:
-/home/gaetano/Documenti/trampoline//os/tpl_os_os.h:
-/home/gaetano/Documenti/trampoline//os/tpl_os_interrupt.h:
-/home/gaetano/Documenti/trampoline//os/tpl_os_task.h:
-/home/gaetano/Documenti/trampoline//os/tpl_os_resource.h:
-/home/gaetano/Documenti/trampoline//os/tpl_os_alarm.h:
-/home/gaetano/Documenti/trampoline//com/tpl_com_internal.h:
-/home/gaetano/Documenti/trampoline//com/tpl_com_types.h:
-/home/gaetano/Documenti/trampoline//os/tpl_os_types.h:
+/home/gulistan/Documents/trampoline//machines/avr/tpl_machine.h:
+/home/gulistan/Documents/trampoline//os/tpl_os_custom_types.h:
+/home/gulistan/Documents/trampoline//os/tpl_os_application_def.h:
+lab03_ex03/tpl_app_define.h:
+/home/gulistan/Documents/trampoline//os/tpl_config_def.h:
+/home/gulistan/Documents/trampoline//os/tpl_config_check.h:
+lab03_ex03/tpl_app_custom_types.h:
+/home/gulistan/Documents/trampoline//os/tpl_compiler.h:
+/home/gulistan/Documents/trampoline//machines/avr/tpl_os_std_types.h:
+/home/gulistan/Documents/trampoline//os/tpl_os_application_def.h:
+lab03_ex03/tpl_app_config.h:
+lab03_ex03/tpl_app_define.h:
+/home/gulistan/Documents/trampoline//os/tpl_os_internal_types.h:
+/home/gulistan/Documents/trampoline//os/tpl_os_custom_types.h:
+/home/gulistan/Documents/trampoline//machines/avr/tpl_machine.h:
+/home/gulistan/Documents/trampoline//os/tpl_compiler.h:
+/home/gulistan/Documents/trampoline//os/tpl_memmap.h:
+/home/gulistan/Documents/trampoline//os/tpl_os_definitions.h:
+/home/gulistan/Documents/trampoline//os/tpl_os_kernel.h:
+/home/gulistan/Documents/trampoline//os/tpl_os_internal_types.h:
+/home/gulistan/Documents/trampoline//os/tpl_os_multicore_macros.h:
+/home/gulistan/Documents/trampoline//os/tpl_memmap.h:
+lab03_ex03/tpl_os.h:
+/home/gulistan/Documents/trampoline//os/tpl_os_error.h:
+/home/gulistan/Documents/trampoline//os/tpl_os_types.h:
+/home/gulistan/Documents/trampoline//os/tpl_os_os.h:
+/home/gulistan/Documents/trampoline//os/tpl_os_interrupt.h:
+/home/gulistan/Documents/trampoline//os/tpl_os_task.h:
+/home/gulistan/Documents/trampoline//os/tpl_os_resource.h:
+/home/gulistan/Documents/trampoline//os/tpl_os_alarm.h:
+/home/gulistan/Documents/trampoline//com/tpl_com_internal.h:
+/home/gulistan/Documents/trampoline//com/tpl_com_types.h:
+/home/gulistan/Documents/trampoline//os/tpl_os_types.h:

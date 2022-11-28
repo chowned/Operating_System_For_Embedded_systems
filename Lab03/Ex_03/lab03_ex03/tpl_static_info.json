@@ -1,0 +1,171 @@
+
+{
+  "alarm" : 
+  [
+    
+    {
+      "ACTION" : "ACTIVATETASK",
+      "ACTION_S" : 
+      {
+        "TASK" : "TaskA"
+      },
+      "AUTOSTART" : "true",
+      "AUTOSTART_S" : 
+      {
+        "ALARMTIME" : 977,
+        "APPMODE" : 
+        [
+          
+          {
+            "VALUE" : "stdAppmode"
+          }
+        ],
+        "CYCLETIME" : 977
+      },
+      "COUNTER" : "SystemCounter",
+      "NAME" : "a1000msec"
+    },    
+    {
+      "ACTION" : "ACTIVATETASK",
+      "ACTION_S" : 
+      {
+        "TASK" : "TaskB"
+      },
+      "AUTOSTART" : "true",
+      "AUTOSTART_S" : 
+      {
+        "ALARMTIME" : 1465,
+        "APPMODE" : 
+        [
+          
+          {
+            "VALUE" : "stdAppmode"
+          }
+        ],
+        "CYCLETIME" : 1465
+      },
+      "COUNTER" : "SystemCounter",
+      "NAME" : "a1500msec"
+    },    
+    {
+      "ACTION" : "ACTIVATETASK",
+      "ACTION_S" : 
+      {
+        "TASK" : "TaskC"
+      },
+      "AUTOSTART" : "true",
+      "AUTOSTART_S" : 
+      {
+        "ALARMTIME" : 2734,
+        "APPMODE" : 
+        [
+          
+          {
+            "VALUE" : "stdAppmode"
+          }
+        ],
+        "CYCLETIME" : 2734
+      },
+      "COUNTER" : "SystemCounter",
+      "NAME" : "a2800msec"
+    }
+  ],
+  "event" : [],
+  "ioc" : [],
+  "isr" : [],
+  "message" : 
+  [
+    
+    {
+      "MESSAGEPROPERTY" : "RECEIVE_QUEUED_INTERNAL",
+      "MESSAGEPROPERTY_S" : 
+      {
+        "FILTER" : "ALWAYS",
+        "INITIALVALUE" : 0,
+        "QUEUESIZE" : 3,
+        "SENDINGMESSAGE" : "msgDataSend"
+      },
+      "NAME" : "msgDataReceiveUnqueued",
+      "NOTIFICATION" : "NONE",
+      "NOTIFICATIONERROR" : "NONE"
+    },    
+    {
+      "MESSAGEPROPERTY" : "SEND_STATIC_INTERNAL",
+      "MESSAGEPROPERTY_S" : 
+      {
+        "CDATATYPE" : "uint8"
+      },
+      "NAME" : "msgDataSend",
+      "NOTIFICATION" : "NONE",
+      "NOTIFICATIONERROR" : "NONE"
+    }
+  ],
+  "resource" : [],
+  "task" : 
+  [
+    
+    {
+      "ACTIVATION" : 1,
+      "AUTOSTART" : "true",
+      "AUTOSTART_S" : 
+      {
+        "APPMODE" : 
+        [
+          
+          {
+            "VALUE" : "stdAppmode"
+          }
+        ]
+      },
+      "KIND" : "Task",
+      "NAME" : "TaskC",
+      "NONPREEMPTABLE" : "false",
+      "PRIORITY" : 1,
+      "SCHEDULE" : "FULL",
+      "STACKSIZE" : 256,
+      "USEINTERNALRESOURCE" : "false"
+    },    
+    {
+      "ACTIVATION" : 1,
+      "AUTOSTART" : "true",
+      "AUTOSTART_S" : 
+      {
+        "APPMODE" : 
+        [
+          
+          {
+            "VALUE" : "stdAppmode"
+          }
+        ]
+      },
+      "KIND" : "Task",
+      "NAME" : "TaskB",
+      "NONPREEMPTABLE" : "false",
+      "PRIORITY" : 2,
+      "SCHEDULE" : "FULL",
+      "STACKSIZE" : 256,
+      "USEINTERNALRESOURCE" : "false"
+    },    
+    {
+      "ACTIVATION" : 1,
+      "AUTOSTART" : "true",
+      "AUTOSTART_S" : 
+      {
+        "APPMODE" : 
+        [
+          
+          {
+            "VALUE" : "stdAppmode"
+          }
+        ]
+      },
+      "KIND" : "Task",
+      "NAME" : "TaskA",
+      "NONPREEMPTABLE" : "false",
+      "PRIORITY" : 3,
+      "SCHEDULE" : "FULL",
+      "STACKSIZE" : 256,
+      "USEINTERNALRESOURCE" : "false"
+    }
+  ]
+}

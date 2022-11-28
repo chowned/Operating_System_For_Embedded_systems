@@ -1,5 +1,29 @@
-build/machines/avr/arduino/cores/arduino/main.cpp.o: \
- /home/gulistan/Documents/trampoline//machines/avr/arduino/cores/arduino/main.cpp \
+build/lab03_ex03.cpp.o: lab03_ex03.cpp lab03_ex03/tpl_os.h \
+ /home/gulistan/Documents/trampoline//os/tpl_os_definitions.h \
+ /home/gulistan/Documents/trampoline//os/tpl_os_application_def.h \
+ lab03_ex03/tpl_app_define.h \
+ /home/gulistan/Documents/trampoline//os/tpl_config_def.h \
+ /home/gulistan/Documents/trampoline//os/tpl_config_check.h \
+ /home/gulistan/Documents/trampoline//os/tpl_os_application_def.h \
+ /home/gulistan/Documents/trampoline//os/tpl_os_error.h \
+ /home/gulistan/Documents/trampoline//os/tpl_os_types.h \
+ /home/gulistan/Documents/trampoline//os/tpl_os_internal_types.h \
+ /home/gulistan/Documents/trampoline//machines/avr/tpl_os_std_types.h \
+ /home/gulistan/Documents/trampoline//os/tpl_os_custom_types.h \
+ lab03_ex03/tpl_app_custom_types.h \
+ /home/gulistan/Documents/trampoline//os/tpl_compiler.h \
+ /home/gulistan/Documents/trampoline//machines/avr/tpl_machine.h \
+ /home/gulistan/Documents/trampoline//os/tpl_os_custom_types.h \
+ /home/gulistan/Documents/trampoline//os/tpl_compiler.h \
+ /home/gulistan/Documents/trampoline//os/tpl_memmap.h \
+ /home/gulistan/Documents/trampoline//os/tpl_os_os.h \
+ /home/gulistan/Documents/trampoline//os/tpl_os_interrupt.h \
+ /home/gulistan/Documents/trampoline//os/tpl_os_task.h \
+ /home/gulistan/Documents/trampoline//os/tpl_os_resource.h \
+ /home/gulistan/Documents/trampoline//os/tpl_os_alarm.h \
+ /home/gulistan/Documents/trampoline//com/tpl_com_internal.h \
+ /home/gulistan/Documents/trampoline//com/tpl_com_types.h \
+ /home/gulistan/Documents/trampoline//os/tpl_os_types.h \
  /home/gulistan/Documents/trampoline//machines/avr/arduino/cores/arduino/Arduino.h \
  /usr/avr/include/stdlib.h /usr/lib/gcc/avr/12.2.0/include/stddef.h \
  /usr/lib/gcc/avr/12.2.0/include/stdbool.h /usr/avr/include/string.h \
@@ -23,21 +47,33 @@ build/machines/avr/arduino/cores/arduino/main.cpp.o: \
  /usr/avr/include/avr/eeprom.h /usr/avr/include/util/delay.h \
  /usr/avr/include/util/delay_basic.h \
  /home/gulistan/Documents/trampoline//machines/avr/arduino/cores/arduino/Arduino.h \
- /home/gulistan/Documents/trampoline//machines/avr/arduino/variants/standard/pins_arduino.h \
- /home/gulistan/Documents/trampoline//os/tpl_os_os.h \
- lab03_ex03/tpl_app_custom_types.h \
- /home/gulistan/Documents/trampoline//os/tpl_compiler.h \
- lab03_ex03/tpl_app_define.h \
- /home/gulistan/Documents/trampoline//os/tpl_config_def.h \
- /home/gulistan/Documents/trampoline//os/tpl_config_check.h \
- /home/gulistan/Documents/trampoline//machines/avr/tpl_os_std_types.h \
- /home/gulistan/Documents/trampoline//os/tpl_os_internal_types.h \
- /home/gulistan/Documents/trampoline//os/tpl_os_custom_types.h \
- /home/gulistan/Documents/trampoline//os/tpl_os_application_def.h \
- /home/gulistan/Documents/trampoline//machines/avr/tpl_machine.h \
- /home/gulistan/Documents/trampoline//os/tpl_os_custom_types.h \
- /home/gulistan/Documents/trampoline//os/tpl_compiler.h \
- /home/gulistan/Documents/trampoline//os/tpl_memmap.h
+ /home/gulistan/Documents/trampoline//machines/avr/arduino/variants/standard/pins_arduino.h
+lab03_ex03/tpl_os.h:
+/home/gulistan/Documents/trampoline//os/tpl_os_definitions.h:
+/home/gulistan/Documents/trampoline//os/tpl_os_application_def.h:
+lab03_ex03/tpl_app_define.h:
+/home/gulistan/Documents/trampoline//os/tpl_config_def.h:
+/home/gulistan/Documents/trampoline//os/tpl_config_check.h:
+/home/gulistan/Documents/trampoline//os/tpl_os_application_def.h:
+/home/gulistan/Documents/trampoline//os/tpl_os_error.h:
+/home/gulistan/Documents/trampoline//os/tpl_os_types.h:
+/home/gulistan/Documents/trampoline//os/tpl_os_internal_types.h:
+/home/gulistan/Documents/trampoline//machines/avr/tpl_os_std_types.h:
+/home/gulistan/Documents/trampoline//os/tpl_os_custom_types.h:
+lab03_ex03/tpl_app_custom_types.h:
+/home/gulistan/Documents/trampoline//os/tpl_compiler.h:
+/home/gulistan/Documents/trampoline//machines/avr/tpl_machine.h:
+/home/gulistan/Documents/trampoline//os/tpl_os_custom_types.h:
+/home/gulistan/Documents/trampoline//os/tpl_compiler.h:
+/home/gulistan/Documents/trampoline//os/tpl_memmap.h:
+/home/gulistan/Documents/trampoline//os/tpl_os_os.h:
+/home/gulistan/Documents/trampoline//os/tpl_os_interrupt.h:
+/home/gulistan/Documents/trampoline//os/tpl_os_task.h:
+/home/gulistan/Documents/trampoline//os/tpl_os_resource.h:
+/home/gulistan/Documents/trampoline//os/tpl_os_alarm.h:
+/home/gulistan/Documents/trampoline//com/tpl_com_internal.h:
+/home/gulistan/Documents/trampoline//com/tpl_com_types.h:
+/home/gulistan/Documents/trampoline//os/tpl_os_types.h:
 /home/gulistan/Documents/trampoline//machines/avr/arduino/cores/arduino/Arduino.h:
 /usr/avr/include/stdlib.h:
 /usr/lib/gcc/avr/12.2.0/include/stddef.h:
@@ -73,17 +109,3 @@ build/machines/avr/arduino/cores/arduino/main.cpp.o: \
 /usr/avr/include/util/delay_basic.h:
 /home/gulistan/Documents/trampoline//machines/avr/arduino/cores/arduino/Arduino.h:
 /home/gulistan/Documents/trampoline//machines/avr/arduino/variants/standard/pins_arduino.h:
-/home/gulistan/Documents/trampoline//os/tpl_os_os.h:
-lab03_ex03/tpl_app_custom_types.h:
-/home/gulistan/Documents/trampoline//os/tpl_compiler.h:
-lab03_ex03/tpl_app_define.h:
-/home/gulistan/Documents/trampoline//os/tpl_config_def.h:
-/home/gulistan/Documents/trampoline//os/tpl_config_check.h:
-/home/gulistan/Documents/trampoline//machines/avr/tpl_os_std_types.h:
-/home/gulistan/Documents/trampoline//os/tpl_os_internal_types.h:
-/home/gulistan/Documents/trampoline//os/tpl_os_custom_types.h:
-/home/gulistan/Documents/trampoline//os/tpl_os_application_def.h:
-/home/gulistan/Documents/trampoline//machines/avr/tpl_machine.h:
-/home/gulistan/Documents/trampoline//os/tpl_os_custom_types.h:
-/home/gulistan/Documents/trampoline//os/tpl_compiler.h:
-/home/gulistan/Documents/trampoline//os/tpl_memmap.h:

@@ -13,7 +13,7 @@ CPU three_tasks {
     STATUS = STANDARD;
     BUILD = TRUE {
         APP_SRC = "lab03_ex03.cpp";
-        TRAMPOLINE_BASE_PATH = "/home/$USER/Documenti/trampoline/";
+        TRAMPOLINE_BASE_PATH = "/home/gulistan/Documents/trampoline/";
         APP_NAME = "ex3_exe";
 
         CPPCOMPILER = "avr-g++";
@@ -26,8 +26,24 @@ CPU three_tasks {
     SYSTEM_CALL = TRUE;
   };
     APPMODE stdAppmode {};
-    //SCHEDULING POLICY: NON-PREEMPTIVE;
-    SCHEDULING POLICY: NON-PREEMPTIVE;
+
+    MESSAGE msgDataSend {
+        MESSAGEPROPERTY = SEND_STATIC_INTERNAL { 
+            CDATATYPE = "uint8";
+        };
+    };
+    MESSAGE msgDataReceiveUnqueued {
+        MESSAGEPROPERTY     =   RECEIVE_QUEUED_INTERNAL{
+            SENDINGMESSAGE   =   msgDataSend;
+            FILTER          =   ALWAYS;
+            INITIALVALUE    =   0x00;
+            QUEUESIZE = 3;
+        };
+        /*NOTIFICATION = ACTIVATETASK{
+            TASK = TaskA;
+        };*/
+    };
+
     ALARM a1000msec {
         COUNTER = SystemCounter;
         ACTION = ACTIVATETASK { TASK = TaskA; };
@@ -47,21 +63,23 @@ CPU three_tasks {
         PRIORITY = 3; /* w=2 */
         AUTOSTART = TRUE { APPMODE = stdAppmode; };
         ACTIVATION = 1;
-        SCHEDULE = NON;
+        SCHEDULE = FULL;
         STACKSIZE = 256;
+        
     };
     TASK TaskB {
         PRIORITY = 2; /* w=7 */
         AUTOSTART = TRUE { APPMODE = stdAppmode; };
         ACTIVATION = 1;
-        SCHEDULE = NON;
+        SCHEDULE = FULL;
         STACKSIZE = 256;
     };
     TASK TaskC {
         PRIORITY = 1; /* w=3 */
         AUTOSTART = TRUE { APPMODE = stdAppmode; };
         ACTIVATION = 1;
-        SCHEDULE = NON;
+        SCHEDULE = FULL;
         STACKSIZE = 256;
+        
     };
 };
