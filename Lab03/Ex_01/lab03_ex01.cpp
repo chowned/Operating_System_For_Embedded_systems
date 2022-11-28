@@ -21,13 +21,19 @@ which is legally registered on github.
 
 void do_things(int ms, int outputPin)
 {
-    unsigned long mul = ms * 198UL; //* 504UL / 3;
+    unsigned long mul = ms * 155UL; //* 504UL / 3;
     unsigned long i;
-    digitalWrite(outputPin, LOW);
     for(i=0; i<mul; i++)
         digitalWrite(outputPin, HIGH);
         millis();
     digitalWrite(outputPin, LOW);
+}
+
+void cleanOutput()
+{
+    digitalWrite(PIN_OUTPUT_TASK_A, LOW);
+    digitalWrite(PIN_OUTPUT_TASK_B, LOW);
+    digitalWrite(PIN_OUTPUT_TASK_C, LOW);
 }
 
 void setup()
@@ -39,16 +45,19 @@ void setup()
 
 TASK(TaskA)
 {
+    // cleanOutput();
     do_things(200,PIN_OUTPUT_TASK_A);
     TerminateTask();
 }
 TASK(TaskB) 
 {
+    // cleanOutput();
     do_things(700,PIN_OUTPUT_TASK_B);
     TerminateTask();
 }
 TASK(TaskC) 
 {
+    // cleanOutput();
     do_things(300,PIN_OUTPUT_TASK_C);
     TerminateTask();
 }

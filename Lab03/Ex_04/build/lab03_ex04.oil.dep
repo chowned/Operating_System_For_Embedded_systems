@@ -1,0 +1,10 @@
+lab03_ex04.oil: \
+ /home/gulistan/Documents/trampoline/goil/templates/config/config.oil \
+ /home/gulistan/Documents/trampoline/goil/templates/config/kernel.oil \
+ /home/gulistan/Documents/trampoline/goil/templates/config/api.oil \
+ /home/gulistan/Documents/trampoline/goil/templates/config/api_STM.oil \
+ /home/gulistan/Documents/trampoline/goil/templates/config/api_ioc.oil \
+ /home/gulistan/Documents/trampoline/goil/templates/config/avr/config.oil \
+ /home/gulistan/Documents/trampoline/goil/templates/config/avr/arduino/config.oil \
+ /home/gulistan/Documents/trampoline/goil/templates/config/avr/arduino/uno/config.oil \
+ /home/gulistan/Documents/trampoline/goil/templates/config/config2.5.oil
