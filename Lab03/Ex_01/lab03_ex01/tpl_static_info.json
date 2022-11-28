@@ -80,7 +80,17 @@
     
     {
       "ACTIVATION" : 1,
-      "AUTOSTART" : "false",
+      "AUTOSTART" : "true",
+      "AUTOSTART_S" : 
+      {
+        "APPMODE" : 
+        [
+          
+          {
+            "VALUE" : "stdAppmode"
+          }
+        ]
+      },
       "KIND" : "Task",
       "NAME" : "TaskC",
       "NONPREEMPTABLE" : "false",
@@ -91,7 +101,17 @@
     },    
     {
       "ACTIVATION" : 1,
-      "AUTOSTART" : "false",
+      "AUTOSTART" : "true",
+      "AUTOSTART_S" : 
+      {
+        "APPMODE" : 
+        [
+          
+          {
+            "VALUE" : "stdAppmode"
+          }
+        ]
+      },
       "KIND" : "Task",
       "NAME" : "TaskB",
       "NONPREEMPTABLE" : "false",

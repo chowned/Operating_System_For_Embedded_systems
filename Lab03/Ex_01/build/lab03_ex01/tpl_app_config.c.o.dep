@@ -1,0 +1,92 @@
+build/lab03_ex01/tpl_app_config.c.o: lab03_ex01/tpl_app_config.c \
+ /usr/lib/gcc/avr/12.2.0/include/stdbool.h \
+ /usr/lib/gcc/avr/12.2.0/include/stdint.h /usr/avr/include/stdint.h \
+ lab03_ex01/tpl_app_config.h lab03_ex01/tpl_app_define.h \
+ /home/gulistan/Documents/trampoline//os/tpl_config_def.h \
+ /home/gulistan/Documents/trampoline//os/tpl_config_check.h \
+ /home/gulistan/Documents/trampoline//os/tpl_compiler.h \
+ lab03_ex01/tpl_app_define.h \
+ /home/gulistan/Documents/trampoline//os/tpl_os_internal_types.h \
+ /home/gulistan/Documents/trampoline//machines/avr/tpl_os_std_types.h \
+ /home/gulistan/Documents/trampoline//os/tpl_os_custom_types.h \
+ /home/gulistan/Documents/trampoline//os/tpl_os_application_def.h \
+ lab03_ex01/tpl_app_custom_types.h \
+ /home/gulistan/Documents/trampoline//machines/avr/tpl_machine.h \
+ /home/gulistan/Documents/trampoline//os/tpl_os_custom_types.h \
+ /home/gulistan/Documents/trampoline//os/tpl_compiler.h \
+ /home/gulistan/Documents/trampoline//os/tpl_memmap.h \
+ /home/gulistan/Documents/trampoline//os/tpl_os_interrupt.h \
+ /home/gulistan/Documents/trampoline//os/tpl_os_types.h \
+ /home/gulistan/Documents/trampoline//os/tpl_os_internal_types.h \
+ /home/gulistan/Documents/trampoline//os/tpl_os_interrupt_kernel.h \
+ /home/gulistan/Documents/trampoline//os/tpl_os_kernel.h \
+ /home/gulistan/Documents/trampoline//os/tpl_os_multicore_macros.h \
+ /home/gulistan/Documents/trampoline//os/tpl_memmap.h \
+ /home/gulistan/Documents/trampoline//os/tpl_os_alarm_kernel.h \
+ /home/gulistan/Documents/trampoline//os/tpl_os_timeobj_kernel.h \
+ /home/gulistan/Documents/trampoline//os/tpl_os_action.h \
+ /home/gulistan/Documents/trampoline//os/tpl_os_task_kernel.h \
+ /home/gulistan/Documents/trampoline//os/tpl_os_alarm.h \
+ /home/gulistan/Documents/trampoline//os/tpl_os_resource_kernel.h \
+ /home/gulistan/Documents/trampoline//os/tpl_os_resource.h \
+ /home/gulistan/Documents/trampoline//os/tpl_os_event_kernel.h \
+ /home/gulistan/Documents/trampoline//os/tpl_os_event.h \
+ /home/gulistan/Documents/trampoline//os/tpl_os_action.h \
+ /home/gulistan/Documents/trampoline//os/tpl_os_kernel.h \
+ /home/gulistan/Documents/trampoline//os/tpl_os_definitions.h \
+ /home/gulistan/Documents/trampoline//os/tpl_os_timeobj_kernel.h \
+ /home/gulistan/Documents/trampoline//os/tpl_machine_interface.h \
+ /usr/avr/include/avr/interrupt.h /usr/avr/include/avr/io.h \
+ /usr/avr/include/avr/sfr_defs.h /usr/avr/include/inttypes.h \
+ /usr/avr/include/avr/iom328p.h /usr/avr/include/avr/portpins.h \
+ /usr/avr/include/avr/common.h /usr/avr/include/avr/version.h \
+ /usr/avr/include/avr/fuse.h /usr/avr/include/avr/lock.h
+/usr/lib/gcc/avr/12.2.0/include/stdbool.h:
+/usr/lib/gcc/avr/12.2.0/include/stdint.h:
+/usr/avr/include/stdint.h:
+lab03_ex01/tpl_app_config.h:
+lab03_ex01/tpl_app_define.h:
+/home/gulistan/Documents/trampoline//os/tpl_config_def.h:
+/home/gulistan/Documents/trampoline//os/tpl_config_check.h:
+/home/gulistan/Documents/trampoline//os/tpl_compiler.h:
+lab03_ex01/tpl_app_define.h:
+/home/gulistan/Documents/trampoline//os/tpl_os_internal_types.h:
+/home/gulistan/Documents/trampoline//machines/avr/tpl_os_std_types.h:
+/home/gulistan/Documents/trampoline//os/tpl_os_custom_types.h:
+/home/gulistan/Documents/trampoline//os/tpl_os_application_def.h:
+lab03_ex01/tpl_app_custom_types.h:
+/home/gulistan/Documents/trampoline//machines/avr/tpl_machine.h:
+/home/gulistan/Documents/trampoline//os/tpl_os_custom_types.h:
+/home/gulistan/Documents/trampoline//os/tpl_compiler.h:
+/home/gulistan/Documents/trampoline//os/tpl_memmap.h:
+/home/gulistan/Documents/trampoline//os/tpl_os_interrupt.h:
+/home/gulistan/Documents/trampoline//os/tpl_os_types.h:
+/home/gulistan/Documents/trampoline//os/tpl_os_internal_types.h:
+/home/gulistan/Documents/trampoline//os/tpl_os_interrupt_kernel.h:
+/home/gulistan/Documents/trampoline//os/tpl_os_kernel.h:
+/home/gulistan/Documents/trampoline//os/tpl_os_multicore_macros.h:
+/home/gulistan/Documents/trampoline//os/tpl_memmap.h:
+/home/gulistan/Documents/trampoline//os/tpl_os_alarm_kernel.h:
+/home/gulistan/Documents/trampoline//os/tpl_os_timeobj_kernel.h:
+/home/gulistan/Documents/trampoline//os/tpl_os_action.h:
+/home/gulistan/Documents/trampoline//os/tpl_os_task_kernel.h:
+/home/gulistan/Documents/trampoline//os/tpl_os_alarm.h:
+/home/gulistan/Documents/trampoline//os/tpl_os_resource_kernel.h:
+/home/gulistan/Documents/trampoline//os/tpl_os_resource.h:
+/home/gulistan/Documents/trampoline//os/tpl_os_event_kernel.h:
+/home/gulistan/Documents/trampoline//os/tpl_os_event.h:
+/home/gulistan/Documents/trampoline//os/tpl_os_action.h:
+/home/gulistan/Documents/trampoline//os/tpl_os_kernel.h:
+/home/gulistan/Documents/trampoline//os/tpl_os_definitions.h:
+/home/gulistan/Documents/trampoline//os/tpl_os_timeobj_kernel.h:
+/home/gulistan/Documents/trampoline//os/tpl_machine_interface.h:
+/usr/avr/include/avr/interrupt.h:
+/usr/avr/include/avr/io.h:
+/usr/avr/include/avr/sfr_defs.h:
+/usr/avr/include/inttypes.h:
+/usr/avr/include/avr/iom328p.h:
+/usr/avr/include/avr/portpins.h:
+/usr/avr/include/avr/common.h:
+/usr/avr/include/avr/version.h:
+/usr/avr/include/avr/fuse.h:
+/usr/avr/include/avr/lock.h:

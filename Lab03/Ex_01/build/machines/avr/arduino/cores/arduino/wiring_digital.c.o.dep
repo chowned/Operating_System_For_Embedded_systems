@@ -1,6 +1,6 @@
 build/machines/avr/arduino/cores/arduino/wiring_digital.c.o: \
- /home/gaetano/Documenti/trampoline//machines/avr/arduino/cores/arduino/wiring_digital.c \
- /home/gaetano/Documenti/trampoline//machines/avr/arduino/cores/arduino/wiring_private.h \
+ /home/gulistan/Documents/trampoline//machines/avr/arduino/cores/arduino/wiring_digital.c \
+ /home/gulistan/Documents/trampoline//machines/avr/arduino/cores/arduino/wiring_private.h \
  /usr/avr/include/avr/io.h /usr/avr/include/avr/sfr_defs.h \
  /usr/avr/include/inttypes.h /usr/lib/gcc/avr/12.2.0/include/stdint.h \
  /usr/avr/include/stdint.h /usr/avr/include/avr/iom328p.h \
@@ -9,13 +9,13 @@ build/machines/avr/arduino/cores/arduino/wiring_digital.c.o: \
  /usr/avr/include/avr/lock.h /usr/avr/include/avr/interrupt.h \
  /usr/avr/include/stdio.h /usr/lib/gcc/avr/12.2.0/include/stdarg.h \
  /usr/lib/gcc/avr/12.2.0/include/stddef.h \
- /home/gaetano/Documenti/trampoline//machines/avr/arduino/cores/arduino/Arduino.h \
+ /home/gulistan/Documents/trampoline//machines/avr/arduino/cores/arduino/Arduino.h \
  /usr/avr/include/stdlib.h /usr/lib/gcc/avr/12.2.0/include/stdbool.h \
  /usr/avr/include/string.h /usr/avr/include/math.h \
  /usr/avr/include/avr/pgmspace.h \
- /home/gaetano/Documenti/trampoline//machines/avr/arduino/cores/arduino/binary.h \
- /home/gaetano/Documenti/trampoline//machines/avr/arduino/variants/standard/pins_arduino.h
-/home/gaetano/Documenti/trampoline//machines/avr/arduino/cores/arduino/wiring_private.h:
+ /home/gulistan/Documents/trampoline//machines/avr/arduino/cores/arduino/binary.h \
+ /home/gulistan/Documents/trampoline//machines/avr/arduino/variants/standard/pins_arduino.h
+/home/gulistan/Documents/trampoline//machines/avr/arduino/cores/arduino/wiring_private.h:
 /usr/avr/include/avr/io.h:
 /usr/avr/include/avr/sfr_defs.h:
 /usr/avr/include/inttypes.h:
@@ -31,11 +31,11 @@ build/machines/avr/arduino/cores/arduino/wiring_digital.c.o: \
 /usr/avr/include/stdio.h:
 /usr/lib/gcc/avr/12.2.0/include/stdarg.h:
 /usr/lib/gcc/avr/12.2.0/include/stddef.h:
-/home/gaetano/Documenti/trampoline//machines/avr/arduino/cores/arduino/Arduino.h:
+/home/gulistan/Documents/trampoline//machines/avr/arduino/cores/arduino/Arduino.h:
 /usr/avr/include/stdlib.h:
 /usr/lib/gcc/avr/12.2.0/include/stdbool.h:
 /usr/avr/include/string.h:
 /usr/avr/include/math.h:
 /usr/avr/include/avr/pgmspace.h:
-/home/gaetano/Documenti/trampoline//machines/avr/arduino/cores/arduino/binary.h:
-/home/gaetano/Documenti/trampoline//machines/avr/arduino/variants/standard/pins_arduino.h:
+/home/gulistan/Documents/trampoline//machines/avr/arduino/cores/arduino/binary.h:
+/home/gulistan/Documents/trampoline//machines/avr/arduino/variants/standard/pins_arduino.h:

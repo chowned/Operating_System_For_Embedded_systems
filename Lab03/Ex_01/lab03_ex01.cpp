@@ -21,8 +21,9 @@ which is legally registered on github.
 
 void do_things(int ms, int outputPin)
 {
-    unsigned long mul = ms * 504UL;
+    unsigned long mul = ms * 198UL; //* 504UL / 3;
     unsigned long i;
+    digitalWrite(outputPin, LOW);
     for(i=0; i<mul; i++)
         digitalWrite(outputPin, HIGH);
         millis();
@@ -38,16 +39,16 @@ void setup()
 
 TASK(TaskA)
 {
-    do_things(1000,PIN_OUTPUT_TASK_A);
+    do_things(200,PIN_OUTPUT_TASK_A);
     TerminateTask();
 }
 TASK(TaskB) 
 {
-    do_things(1500,PIN_OUTPUT_TASK_B);
+    do_things(700,PIN_OUTPUT_TASK_B);
     TerminateTask();
 }
 TASK(TaskC) 
 {
-    do_things(2800,PIN_OUTPUT_TASK_C);
+    do_things(300,PIN_OUTPUT_TASK_C);
     TerminateTask();
 }

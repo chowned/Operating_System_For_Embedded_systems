@@ -1,0 +1,54 @@
+build/lab03_ex02/tpl_interrupts.c.o: lab03_ex02/tpl_interrupts.c \
+ /home/gulistan/Documents/trampoline//machines/avr/tpl_machine.h \
+ /home/gulistan/Documents/trampoline//os/tpl_os_custom_types.h \
+ /home/gulistan/Documents/trampoline//os/tpl_os_application_def.h \
+ lab03_ex02/tpl_app_define.h \
+ /home/gulistan/Documents/trampoline//os/tpl_config_def.h \
+ /home/gulistan/Documents/trampoline//os/tpl_config_check.h \
+ lab03_ex02/tpl_app_custom_types.h \
+ /home/gulistan/Documents/trampoline//os/tpl_compiler.h \
+ /home/gulistan/Documents/trampoline//machines/avr/tpl_os_std_types.h \
+ /home/gulistan/Documents/trampoline//machines/avr/arduino/cores/arduino/Arduino.h \
+ /usr/avr/include/stdlib.h /usr/lib/gcc/avr/12.2.0/include/stddef.h \
+ /usr/lib/gcc/avr/12.2.0/include/stdbool.h /usr/avr/include/string.h \
+ /usr/avr/include/math.h /usr/avr/include/avr/pgmspace.h \
+ /usr/avr/include/inttypes.h /usr/lib/gcc/avr/12.2.0/include/stdint.h \
+ /usr/avr/include/stdint.h /usr/avr/include/avr/io.h \
+ /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/iom328p.h \
+ /usr/avr/include/avr/portpins.h /usr/avr/include/avr/common.h \
+ /usr/avr/include/avr/version.h /usr/avr/include/avr/fuse.h \
+ /usr/avr/include/avr/lock.h /usr/avr/include/avr/interrupt.h \
+ /home/gulistan/Documents/trampoline//machines/avr/arduino/cores/arduino/binary.h \
+ /home/gulistan/Documents/trampoline//machines/avr/arduino/variants/standard/pins_arduino.h \
+ /home/gulistan/Documents/trampoline//os/tpl_memmap.h
+/home/gulistan/Documents/trampoline//machines/avr/tpl_machine.h:
+/home/gulistan/Documents/trampoline//os/tpl_os_custom_types.h:
+/home/gulistan/Documents/trampoline//os/tpl_os_application_def.h:
+lab03_ex02/tpl_app_define.h:
+/home/gulistan/Documents/trampoline//os/tpl_config_def.h:
+/home/gulistan/Documents/trampoline//os/tpl_config_check.h:
+lab03_ex02/tpl_app_custom_types.h:
+/home/gulistan/Documents/trampoline//os/tpl_compiler.h:
+/home/gulistan/Documents/trampoline//machines/avr/tpl_os_std_types.h:
+/home/gulistan/Documents/trampoline//machines/avr/arduino/cores/arduino/Arduino.h:
+/usr/avr/include/stdlib.h:
+/usr/lib/gcc/avr/12.2.0/include/stddef.h:
+/usr/lib/gcc/avr/12.2.0/include/stdbool.h:
+/usr/avr/include/string.h:
+/usr/avr/include/math.h:
+/usr/avr/include/avr/pgmspace.h:
+/usr/avr/include/inttypes.h:
+/usr/lib/gcc/avr/12.2.0/include/stdint.h:
+/usr/avr/include/stdint.h:
+/usr/avr/include/avr/io.h:
+/usr/avr/include/avr/sfr_defs.h:
+/usr/avr/include/avr/iom328p.h:
+/usr/avr/include/avr/portpins.h:
+/usr/avr/include/avr/common.h:
+/usr/avr/include/avr/version.h:
+/usr/avr/include/avr/fuse.h:
+/usr/avr/include/avr/lock.h:
+/usr/avr/include/avr/interrupt.h:
+/home/gulistan/Documents/trampoline//machines/avr/arduino/cores/arduino/binary.h:
+/home/gulistan/Documents/trampoline//machines/avr/arduino/variants/standard/pins_arduino.h:
+/home/gulistan/Documents/trampoline//os/tpl_memmap.h:
