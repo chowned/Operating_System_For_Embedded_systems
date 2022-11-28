@@ -1,0 +1,5 @@
+build/machines/avr/arduino/cores/arduino/abi.cpp.o: \
+ /home/gulistan/Documents/trampoline//machines/avr/arduino/cores/arduino/abi.cpp \
+ /usr/avr/include/stdlib.h /usr/lib/gcc/avr/12.2.0/include/stddef.h
+/usr/avr/include/stdlib.h:
+/usr/lib/gcc/avr/12.2.0/include/stddef.h:

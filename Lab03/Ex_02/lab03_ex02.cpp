@@ -24,7 +24,7 @@ DeclareResource(toctocCanI);
 
 void do_things(int ms, int outputPin, bool stopResource)
 {
-    unsigned long mul = ms * 198UL; //* 504UL / 3;
+    unsigned long mul = ms * 155UL; //* 504UL / 3;
     unsigned long i;
     if( stopResource )
     {
