@@ -1,0 +1,15 @@
+build/lab03_ex03/tpl_invoque.S.o: lab03_ex03/tpl_invoque.S \
+ /home/gulistan/Documents/trampoline//os/tpl_os_application_def.h \
+ lab03_ex03/tpl_app_define.h \
+ /home/gulistan/Documents/trampoline//os/tpl_config_def.h \
+ /home/gulistan/Documents/trampoline//os/tpl_config_check.h \
+ lab03_ex03/tpl_service_ids.h \
+ /home/gulistan/Documents/trampoline//machines/avr/tpl_assembler.h \
+ /home/gulistan/Documents/trampoline//os/tpl_as_memmap.h
+/home/gulistan/Documents/trampoline//os/tpl_os_application_def.h:
+lab03_ex03/tpl_app_define.h:
+/home/gulistan/Documents/trampoline//os/tpl_config_def.h:
+/home/gulistan/Documents/trampoline//os/tpl_config_check.h:
+lab03_ex03/tpl_service_ids.h:
+/home/gulistan/Documents/trampoline//machines/avr/tpl_assembler.h:
+/home/gulistan/Documents/trampoline//os/tpl_as_memmap.h:

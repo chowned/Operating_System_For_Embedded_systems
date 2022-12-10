@@ -15,39 +15,71 @@ which is legally registered on github.
 #include "Arduino.h"
 #include <stdlib.h>
 
-#define PIN_OUTPUT_TASK_A 1
-#define PIN_OUTPUT_TASK_B 2
-#define PIN_OUTPUT_TASK_C 3
+#define PIN_OUTPUT_TASK_A   1
+#define PIN_OUTPUT_TASK_B   2
+#define PIN_OUTPUT_TASK_C   3
+#define PIN_OUTPUT_RESOURCE 7
+
+void unlockResource(uint8* resourceUsed)
+{
+    *resourceUsed=0;
+    SendMessage(msgDataSend, resourceUsed);
+    digitalWrite(PIN_OUTPUT_RESOURCE, LOW);
+}
+void blockResource(uint8* resourceUsed)
+{
+    while(*resourceUsed){
+            ReceiveMessage(msgDataReceiveUnqueued, resourceUsed);
+        }
+        
+        *resourceUsed=1;
+        // ReceiveMessage(msgDataReceiveUnqueued, &resource);
+        digitalWrite(PIN_OUTPUT_RESOURCE, HIGH);
+}
 
 void do_things(int ms, int outputPin)
 {
-    unsigned long mul = ms * 504UL;
+    unsigned long mul = ms * 155UL; //* 504UL / 3;
     unsigned long i;
+    
+    digitalWrite(PIN_OUTPUT_TASK_A, LOW);
+    digitalWrite(PIN_OUTPUT_TASK_B, LOW);
+    digitalWrite(PIN_OUTPUT_TASK_C, LOW);
     for(i=0; i<mul; i++)
-        digitalWrite(outputPin, HIGH);
+    digitalWrite(outputPin, HIGH);
         millis();
     digitalWrite(outputPin, LOW);
 }
 
 void setup()
 {
+    uint8 resourceUsed=0;
 	pinMode(PIN_OUTPUT_TASK_A, OUTPUT);
     pinMode(PIN_OUTPUT_TASK_B, OUTPUT);
     pinMode(PIN_OUTPUT_TASK_C, OUTPUT);
+    pinMode(PIN_OUTPUT_RESOURCE, OUTPUT);
+    SendMessage(msgDataSend, &resourceUsed);
 }
 
 TASK(TaskA)
 {
-    do_things(1000,PIN_OUTPUT_TASK_A);
+    uint8 resourceUsed=1;
+    blockResource(&resourceUsed);
+    do_things(200,PIN_OUTPUT_TASK_A);
+    unlockResource(&resourceUsed);
     TerminateTask();
 }
 TASK(TaskB) 
 {
-    do_things(1500,PIN_OUTPUT_TASK_B);
+    do_things(700,PIN_OUTPUT_TASK_B);
     TerminateTask();
 }
 TASK(TaskC) 
 {
-    do_things(2800,PIN_OUTPUT_TASK_C);
+    uint8 resourceUsed=1;
+    do_things(100,PIN_OUTPUT_TASK_C);
+    blockResource(&resourceUsed);
+    do_things(200,PIN_OUTPUT_TASK_C);
+    unlockResource(&resourceUsed);
     TerminateTask();
 }
