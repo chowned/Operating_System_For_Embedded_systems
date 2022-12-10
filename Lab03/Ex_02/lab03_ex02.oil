@@ -13,7 +13,7 @@ CPU three_tasks {
     STATUS = STANDARD;
     BUILD = TRUE {
         APP_SRC = "lab03_ex02.cpp";
-        TRAMPOLINE_BASE_PATH = "/home/gulistan/Documents/trampoline/";
+        TRAMPOLINE_BASE_PATH = "/home/gaetano/Documenti/Github/trampoline/";
         APP_NAME = "ex2_exe";
 
         CPPCOMPILER = "avr-g++";
