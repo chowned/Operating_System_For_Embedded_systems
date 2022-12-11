@@ -1,0 +1,11 @@
+build/machines/avr/arduino//tpl_trace.cpp.o: \
+ /home/gulistan/Documents/trampoline/machines/avr/arduino//tpl_trace.cpp \
+ lab04_ex01/tpl_app_define.h \
+ /home/gulistan/Documents/trampoline/os/tpl_config_def.h \
+ /home/gulistan/Documents/trampoline/os/tpl_config_check.h \
+ /usr/lib/gcc/avr/12.2.0/include/stdint.h /usr/avr/include/stdint.h
+lab04_ex01/tpl_app_define.h:
+/home/gulistan/Documents/trampoline/os/tpl_config_def.h:
+/home/gulistan/Documents/trampoline/os/tpl_config_check.h:
+/usr/lib/gcc/avr/12.2.0/include/stdint.h:
+/usr/avr/include/stdint.h:
