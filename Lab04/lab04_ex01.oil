@@ -1,0 +1,60 @@
+OIL_VERSION = "2.5" : "only_one_periodic_task" ;
+
+IMPLEMENTATION trampoline {
+/* This fix the default STACKSIZE of tasks */
+TASK {
+    UINT32 STACKSIZE = 16384 ;
+} ;
+/* This fix the default STACKSIZE of ISRs */
+ISR {
+    UINT32 STACKSIZE = 16384 ;
+} ;
+};
+
+CPU only_one_periodic_task {    
+  OS config {
+    STATUS = STANDARD;
+    BUILD = TRUE {
+        APP_SRC = "lab04_ex01.cpp";
+        TRAMPOLINE_BASE_PATH = "/home/gulistan/Documents/trampoline";
+        APP_NAME = "lab_4_ex_1_exe";
+
+        CPPCOMPILER = "avr-g++";
+        COMPILER = "avr-gcc";
+        LINKER = "avr-gcc";
+        ASSEMBLER = "avr-gcc";
+        COPIER = "avr-objcopy";
+        SYSTEM = PYTHON;
+        LIBRARY = serial;
+    };
+    SYSTEM_CALL = TRUE;
+  };
+    APPMODE stdAppmode {};
+
+    ALARM aADC {
+        COUNTER = SystemCounter;
+        ACTION = ACTIVATETASK { TASK = TaskADC; };
+        AUTOSTART = TRUE { APPMODE = stdAppmode; ALARMTIME = 20; CYCLETIME = 20; };
+    };
+    ALARM aPWM {
+        COUNTER = SystemCounter;
+        ACTION = ACTIVATETASK { TASK = TaskPWM; };
+        AUTOSTART = TRUE { APPMODE = stdAppmode; ALARMTIME = 977; CYCLETIME = 977; };
+    };
+    TASK TaskADC {
+        PRIORITY = 2;
+        AUTOSTART = TRUE { APPMODE = stdAppmode; };
+        ACTIVATION = 1;
+        SCHEDULE = FULL;
+        STACKSIZE = 256;
+    };
+    TASK TaskPWM {
+        PRIORITY = 1;
+        AUTOSTART = FALSE;
+        ACTIVATION = 1;
+        SCHEDULE = FULL;
+        STACKSIZE = 256;
+    };
+    
+};
+

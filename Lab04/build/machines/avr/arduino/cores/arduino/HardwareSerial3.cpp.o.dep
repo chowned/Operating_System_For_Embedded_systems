@@ -1,0 +1,63 @@
+build/machines/avr/arduino/cores/arduino/HardwareSerial3.cpp.o: \
+ /home/gulistan/Documents/trampoline/machines/avr/arduino/cores/arduino/HardwareSerial3.cpp \
+ /home/gulistan/Documents/trampoline/machines/avr/arduino/cores/arduino/Arduino.h \
+ /usr/avr/include/stdlib.h /usr/lib/gcc/avr/12.2.0/include/stddef.h \
+ /usr/lib/gcc/avr/12.2.0/include/stdbool.h /usr/avr/include/string.h \
+ /usr/avr/include/math.h /usr/avr/include/avr/pgmspace.h \
+ /usr/avr/include/inttypes.h /usr/lib/gcc/avr/12.2.0/include/stdint.h \
+ /usr/avr/include/stdint.h /usr/avr/include/avr/io.h \
+ /usr/avr/include/avr/sfr_defs.h /usr/avr/include/avr/iom328p.h \
+ /usr/avr/include/avr/portpins.h /usr/avr/include/avr/common.h \
+ /usr/avr/include/avr/version.h /usr/avr/include/avr/fuse.h \
+ /usr/avr/include/avr/lock.h /usr/avr/include/avr/interrupt.h \
+ /home/gulistan/Documents/trampoline/machines/avr/arduino/cores/arduino/binary.h \
+ /home/gulistan/Documents/trampoline/machines/avr/arduino/cores/arduino/WCharacter.h \
+ /usr/avr/include/ctype.h \
+ /home/gulistan/Documents/trampoline/machines/avr/arduino/cores/arduino/WString.h \
+ /home/gulistan/Documents/trampoline/machines/avr/arduino/cores/arduino/HardwareSerial.h \
+ /home/gulistan/Documents/trampoline/machines/avr/arduino/cores/arduino/Stream.h \
+ /home/gulistan/Documents/trampoline/machines/avr/arduino/cores/arduino/Print.h \
+ /usr/avr/include/stdio.h /usr/lib/gcc/avr/12.2.0/include/stdarg.h \
+ /home/gulistan/Documents/trampoline/machines/avr/arduino/cores/arduino/Printable.h \
+ /home/gulistan/Documents/trampoline/machines/avr/arduino/cores/arduino/USBAPI.h \
+ /usr/avr/include/avr/eeprom.h /usr/avr/include/util/delay.h \
+ /usr/avr/include/util/delay_basic.h \
+ /home/gulistan/Documents/trampoline/machines/avr/arduino/variants/standard/pins_arduino.h \
+ /home/gulistan/Documents/trampoline/machines/avr/arduino/cores/arduino/HardwareSerial_private.h \
+ /home/gulistan/Documents/trampoline/machines/avr/arduino/cores/arduino/wiring_private.h
+/home/gulistan/Documents/trampoline/machines/avr/arduino/cores/arduino/Arduino.h:
+/usr/avr/include/stdlib.h:
+/usr/lib/gcc/avr/12.2.0/include/stddef.h:
+/usr/lib/gcc/avr/12.2.0/include/stdbool.h:
+/usr/avr/include/string.h:
+/usr/avr/include/math.h:
+/usr/avr/include/avr/pgmspace.h:
+/usr/avr/include/inttypes.h:
+/usr/lib/gcc/avr/12.2.0/include/stdint.h:
+/usr/avr/include/stdint.h:
+/usr/avr/include/avr/io.h:
+/usr/avr/include/avr/sfr_defs.h:
+/usr/avr/include/avr/iom328p.h:
+/usr/avr/include/avr/portpins.h:
+/usr/avr/include/avr/common.h:
+/usr/avr/include/avr/version.h:
+/usr/avr/include/avr/fuse.h:
+/usr/avr/include/avr/lock.h:
+/usr/avr/include/avr/interrupt.h:
+/home/gulistan/Documents/trampoline/machines/avr/arduino/cores/arduino/binary.h:
+/home/gulistan/Documents/trampoline/machines/avr/arduino/cores/arduino/WCharacter.h:
+/usr/avr/include/ctype.h:
+/home/gulistan/Documents/trampoline/machines/avr/arduino/cores/arduino/WString.h:
+/home/gulistan/Documents/trampoline/machines/avr/arduino/cores/arduino/HardwareSerial.h:
+/home/gulistan/Documents/trampoline/machines/avr/arduino/cores/arduino/Stream.h:
+/home/gulistan/Documents/trampoline/machines/avr/arduino/cores/arduino/Print.h:
+/usr/avr/include/stdio.h:
+/usr/lib/gcc/avr/12.2.0/include/stdarg.h:
+/home/gulistan/Documents/trampoline/machines/avr/arduino/cores/arduino/Printable.h:
+/home/gulistan/Documents/trampoline/machines/avr/arduino/cores/arduino/USBAPI.h:
+/usr/avr/include/avr/eeprom.h:
+/usr/avr/include/util/delay.h:
+/usr/avr/include/util/delay_basic.h:
+/home/gulistan/Documents/trampoline/machines/avr/arduino/variants/standard/pins_arduino.h:
+/home/gulistan/Documents/trampoline/machines/avr/arduino/cores/arduino/HardwareSerial_private.h:
+/home/gulistan/Documents/trampoline/machines/avr/arduino/cores/arduino/wiring_private.h:
