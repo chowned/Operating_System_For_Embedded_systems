@@ -1,0 +1,5 @@
+build/bufferArray.c.o: bufferArray.c bufferArray.h \
+ /usr/avr/include/stdlib.h /usr/lib/gcc/avr/12.2.0/include/stddef.h
+bufferArray.h:
+/usr/avr/include/stdlib.h:
+/usr/lib/gcc/avr/12.2.0/include/stddef.h:

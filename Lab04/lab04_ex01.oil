@@ -26,6 +26,7 @@ CPU only_one_periodic_task {
         COPIER = "avr-objcopy";
         SYSTEM = PYTHON;
         LIBRARY = serial;
+        APP_SRC = "bufferArray.c";
     };
     SYSTEM_CALL = TRUE;
   };

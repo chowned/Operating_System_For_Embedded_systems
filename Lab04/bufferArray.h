@@ -13,6 +13,8 @@ int  BUFFERsize(S);
 void BUFFERpush(S, int);
 int BUFFERshowSum(S);
 int* BUFFERmodelHR(S);
+int findPeak(S s);
+int howManyPeaks(S s, int peak);
 
 #ifdef __cplusplus
 }

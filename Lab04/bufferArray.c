@@ -9,7 +9,6 @@ struct BUFFER {
 };
 
 S BUFFERinit(int maxSize, int distanceData) {
-  //int maxSize=50, int distanceData=20;
   S s = malloc(sizeof *s);
   s->data = malloc(sizeof(int) * maxSize);
   s->n = 0;
@@ -35,11 +34,10 @@ int BUFFERshowSum(S s) {
   for (i = 0; i < s->maxSize; i++) {
     sum += s->data[i];
   }
-
   return sum;
 }
 
-static int findPeak(S s) {
+int findPeak(S s) {
   int i, max;
   for (i = 0, max = -1000; i < s->maxSize; i++) {
     if (s->data[i] > max) {
@@ -49,7 +47,7 @@ static int findPeak(S s) {
   return max;
 }
 
-static int howManyPeaks(S s, int peak) {
+ int howManyPeaks(S s, int peak) {
   int i, peaks;
   for (i = 0, peaks = 0; i < s->maxSize; i++) {
     if (s->data[i] == peak) {
@@ -78,7 +76,7 @@ static int* modelCalculation(S s) {
     }
   }
 	for (i = 0; i < peaks-1;i++) {
-		returnData[i] = 60/returnData[i];
+		returnData[i] = (int) 60/returnData[i];
 	}
   return returnData;
 }
